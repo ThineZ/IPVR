@@ -10,6 +10,11 @@ IP/[Bb]uilds/
 IP/[Ll]ogs/
 IP/[Uu]ser[Ss]ettings/
 IP/[Aa]ssets/Oculus
+IP/[Aa]ssets/Firebase
+IP/[Aa]ssets/Plugins
+IP/[Aa]ssets/ExternalDependencyManager
+IP/[Aa]ssets/External Default Resources
+IP/[Aa]ssets/Editor Default Resources
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
