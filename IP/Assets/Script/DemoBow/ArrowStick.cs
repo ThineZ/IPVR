@@ -27,9 +27,6 @@ public class ArrowStick : MonoBehaviour
         {
             arrow.transform.parent = collision.collider.attachedRigidbody.transform;
         }
-
-        //collision.collider.GetComponent<IHittable>()?.GetHit();
-
         Destroy(gameObject);
     }
 

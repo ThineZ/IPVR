@@ -18,7 +18,7 @@ public class LoaderLogic : MonoBehaviour
 
     // Constrain for the String Line
     [SerializeField]
-    private float StringLineConstrain = 0.3f;
+    private float StringLineConstrain = 2f;
 
     // The Hand
     private Transform interactor;
@@ -74,25 +74,25 @@ public class LoaderLogic : MonoBehaviour
             Vector3 LoadGrabAreaLocalSpace = LoadParent.InverseTransformPoint(LoadGrabArea.position);
 
             // Get the offset
-            float LoadGrabAreaLocalZAbs = Mathf.Abs(LoadGrabAreaLocalSpace.z);
+            float LoadGrabAreaLocalAbs = Mathf.Abs(LoadGrabAreaLocalSpace.z);
 
             HandleStringPushedBackToStart(LoadGrabAreaLocalSpace);
 
-            HandleStringPulledBackToLimit(LoadGrabAreaLocalZAbs, LoadGrabAreaLocalSpace);
+            HandleStringPulledBackToLimit(LoadGrabAreaLocalAbs, LoadGrabAreaLocalSpace);
 
-            HandlePullingString(LoadGrabAreaLocalZAbs, LoadGrabAreaLocalSpace);
+            HandlePullingString(LoadGrabAreaLocalAbs, LoadGrabAreaLocalSpace);
 
             // Create a line when Hand (interactor) grab the load grab area
             StringLine.CreateLine(LoadAreaVisual.position);
         }
     }
 
-    private void HandlePullingString(float loadGrabAreaLocalZAbs, Vector3 loadGrabAreaLocalSpace)
+    private void HandlePullingString(float loadGrabAreaLocalAbs, Vector3 loadGrabAreaLocalSpace)
     {
         // Checks the value between point 0 and the string limit
-        if (loadGrabAreaLocalSpace.z < 0 && loadGrabAreaLocalZAbs < StringLineConstrain)
+        if (loadGrabAreaLocalSpace.z < 0 && loadGrabAreaLocalAbs < StringLineConstrain)
         {
-            strenght = Remap(loadGrabAreaLocalZAbs, 0, StringLineConstrain, 0, 1);
+            strenght = Remap(loadGrabAreaLocalAbs, 0, StringLineConstrain, 0, 1);
 
             // Force the line to stay on the z axis when the line is  move either x or y
             LoadAreaVisual.localPosition = new Vector3(0,0, loadGrabAreaLocalSpace.z);
@@ -104,10 +104,10 @@ public class LoaderLogic : MonoBehaviour
         return (value - fromMin) / (fromMax - fromMin) * (toMax - toMin) + toMin;
     }
 
-    private void HandleStringPulledBackToLimit(float loadGrabAreaLocalZAbs, Vector3 loadGrabAreaLocalSpace)
+    private void HandleStringPulledBackToLimit(float loadGrabAreaLocalAbs, Vector3 loadGrabAreaLocalSpace)
     {
         // Set max pulling limit for the string.
-        if (loadGrabAreaLocalSpace.z < 0 && loadGrabAreaLocalZAbs >= StringLineConstrain)
+        if (loadGrabAreaLocalSpace.x < 0 && loadGrabAreaLocalAbs >= StringLineConstrain)
         {
             strenght = 1;
 
