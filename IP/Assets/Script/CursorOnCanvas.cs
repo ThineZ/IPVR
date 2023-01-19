@@ -1,5 +1,6 @@
 using UltimateXR.Extensions.Unity;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class CursorOnCanvas : MonoBehaviour
@@ -12,16 +13,6 @@ public class CursorOnCanvas : MonoBehaviour
     [SerializeField] private float CursorWidth;
     [SerializeField] private float CursorHeight;
 
-    public TMP_InputField InputFieldOne; // 0
-    public TMP_InputField InputFieldTwo; // 1
-
-    public void GetMouseClick()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            InputFieldOne.Select();
-        }        
-    }
 
     private void CursorMove()
     {
@@ -37,8 +28,6 @@ public class CursorOnCanvas : MonoBehaviour
     {
         CursorWidth = Cursor.rect.width;
         CursorHeight = Cursor.rect.height;
-
-        GetMouseClick();
     }
 
     private void Update()
