@@ -1,18 +1,11 @@
 using UltimateXR.Extensions.Unity;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using TMPro;
 
 public class CursorOnCanvas : MonoBehaviour
 {
     [SerializeField] private RectTransform Cursor;
-    [SerializeField] private RectTransform CanvasSize;
 
     [SerializeField] private Transform Mouse;
-
-    [SerializeField] private float CursorWidth;
-    [SerializeField] private float CursorHeight;
-
 
     private void CursorMove()
     {
@@ -24,14 +17,40 @@ public class CursorOnCanvas : MonoBehaviour
         Cursor.SetLocalPositionY(Mouse.transform.position.z);
     }
 
-    private void Start()
+    private void CursorBoundX()
     {
-        CursorWidth = Cursor.rect.width;
-        CursorHeight = Cursor.rect.height;
+        if (Mouse.transform.position.x <= -0.4)
+        {
+            Debug.Log("Cursor Position X is less then -0.4");
+            Cursor.SetLocalPositionX(-0.4f);
+        }
+
+        if (Mouse.transform.position.x >= 0.4)
+        {
+            Debug.Log("Cursor Position X is more then 0.4");
+            Cursor.SetLocalPositionX(0.4f);
+        }
+    }
+
+    private void CursorBoundY()
+    {
+        if (Mouse.transform.position.z <= -0.4)
+        {
+            Debug.Log("Cursor Position Y is less then -0.4");
+            Cursor.SetLocalPositionY(-0.4f);
+        }
+
+        if (Mouse.transform.position.z >= 0.4)
+        {
+            Debug.Log("Cursor Position Y is more then 0.4");
+            Cursor.SetLocalPositionY(0.4f);
+        }
     }
 
     private void Update()
     {
         CursorMove();
+        CursorBoundX();
+        CursorBoundY();
     }
 }

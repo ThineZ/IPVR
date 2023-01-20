@@ -1,10 +1,15 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CusorRaycastTwo : MonoBehaviour
 {
     public Collider Cursor2D;
+
+    public Image sRenderer;
+    public Sprite ClickCursor;
+    public Sprite DefaultCursor;
 
     public TMP_InputField InputFieldTwo;
 
@@ -29,21 +34,25 @@ public class CusorRaycastTwo : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
+    {        
         if (other.gameObject.tag == "TwoInput")
         {
             Debug.Log("Cursor2D in InputTwo");
+
+            sRenderer.sprite = ClickCursor;
 
             triggerEnter = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
-    {
+    {        
         if (other.gameObject.tag == "TwoInput")
         {
             Debug.Log("Cursor2D exit InputTwo");
 
+            sRenderer.sprite = DefaultCursor;
+            
             triggerEnter = false;
         }
     }
