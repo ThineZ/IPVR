@@ -9,6 +9,7 @@ TagManager:
   - OneInput
   - TwoInput
   - Screen
+  - KeyBoardBase
   layers:
   - Default
   - TransparentFX

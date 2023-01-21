@@ -10,7 +10,7 @@ public class CursorOnCanvas : MonoBehaviour
     private void CursorMove()
     {
         // Set the Transform Position of Cursor X to the same as Mouse Position X
-        Cursor.SetLocalPositionX(Mouse.transform.position.x);
+        Cursor.SetLocalPositionX(Mouse.transform.position.x - (0.372f));
 
         // Set the Transform Position of Cursor Y to the same as Mouse Position Z
         // As Cursor is 2D and Mouse is 3D
@@ -19,13 +19,13 @@ public class CursorOnCanvas : MonoBehaviour
 
     private void CursorBoundX()
     {
-        if (Mouse.transform.position.x <= -0.4)
+        if (Cursor.transform.position.x <= -0.4)
         {
             Debug.Log("Cursor Position X is less then -0.4");
             Cursor.SetLocalPositionX(-0.4f);
         }
 
-        if (Mouse.transform.position.x >= 0.4)
+        if (Cursor.transform.position.x >= 0.4)
         {
             Debug.Log("Cursor Position X is more then 0.4");
             Cursor.SetLocalPositionX(0.4f);
