@@ -1,3 +1,4 @@
+using System.Diagnostics.Contracts;
 using UnityEngine;
 using UnityEngine.Pool;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -5,8 +6,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class InSlot : MonoBehaviour
 {
     public XRSocketInteractor sockets;
-    public string[] InvenTag;
-    private int TagCount;
 
     public GameObject[] Obj;
 
@@ -23,12 +22,16 @@ public class InSlot : MonoBehaviour
         {
             Debug.Log("Item Enter");
 
+            Obj[0].transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
+
             isEntered = true;
         }        
         
         if (other.gameObject.tag == "IObjTwo")
         {
             Debug.Log("Item Enter");
+
+            Obj[1].transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
 
             isEntered = true;
         }
@@ -40,6 +43,8 @@ public class InSlot : MonoBehaviour
         {
             Debug.Log("Item Exited");
 
+            Obj[0].transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+
             isEntered = false;
         }        
         
@@ -47,41 +52,18 @@ public class InSlot : MonoBehaviour
         {
             Debug.Log("Item Exited");
 
+            Obj[1].transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+
             isEntered = false;
         }
     }
 
-    public void SlotSocket()
+    public void SlotDisable()
     {
-        if (sockets.interactablesSelected.Count > 0 && sockets.interactablesSelected[0].transform.CompareTag(InvenTag[0]))
+        if (sockets.interactablesSelected.Count > 0 && isEntered == true)
         {
-            //Debug.Log("TagCount Enter" + TagCount);
-
-            Obj[0].transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
-        }        
-        
-        if (sockets.interactablesSelected.Count > 0 && sockets.interactablesSelected[0].transform.CompareTag(InvenTag[1]))
-        {
-            //Debug.Log("TagCount Enter" + TagCount);
-
-            Obj[1].transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
-        }
-    }
-
-    public void SlotExited()
-    {
-        if (sockets.interactablesSelected.Count == 0)
-        {
-            //Debug.Log("TagCount Exited" + TagCount);
-
-            Obj[0].transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-        }        
-        
-        if (sockets.interactablesSelected.Count == 0)
-        {
-            //Debug.Log("TagCount Exited" + TagCount);
-
-            Obj[1].transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+            sockets.interactablesSelected[0].transform.gameObject.SetActive(false);
+            Debug.Log("Obj Disable!");
         }
     }
 }

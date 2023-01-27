@@ -10,10 +10,7 @@ public class InventoryVR : MonoBehaviour
     public GameObject Anchor;
     bool UIActive;
 
-    public InSlot slotOne;
-    public InSlot slotTwo;
-    public InSlot slotThree;
-    public InSlot slotFour;
+    [SerializeField] private InSlot[] Slot_CS;
 
     private void Start()
     {
@@ -23,53 +20,21 @@ public class InventoryVR : MonoBehaviour
 
     private void Update()
     {
-        //if (OVRInput.GetDown(OVRInput.Button.Four))
-        //{
-        //    UIActive = !UIActive;
-        //    Inventory.SetActive(UIActive);
-        //}
-        if (Input.GetKeyDown(KeyCode.H))
+        if (OVRInput.GetDown(OVRInput.Button.Four))
         {
             UIActive = !UIActive;
             Inventory.SetActive(UIActive);
 
-            if (slotOne.isEntered == true || slotTwo.isEntered == true || slotThree.isEntered == true || slotFour.isEntered == true)
+            for (int slotLoop = 0; Slot_CS.Length > slotLoop; ++slotLoop)
             {
-                slotOne.Obj[0].SetActive(false);
-                slotTwo.Obj[0].SetActive(false);
-                slotThree.Obj[0].SetActive(false);
-                slotFour.Obj[0].SetActive(false);                
-                slotOne.Obj[1].SetActive(false);
-                slotTwo.Obj[1].SetActive(false);
-                slotThree.Obj[1].SetActive(false);
-                slotFour.Obj[1].SetActive(false);
-            }
-            else if(slotOne.isEntered == false || slotTwo.isEntered == false || slotThree.isEntered == false || slotFour.isEntered == false)
-            {
-                slotOne.Obj[0].SetActive(true);
-                slotTwo.Obj[0].SetActive(true);
-                slotThree.Obj[0].SetActive(true);
-                slotFour.Obj[0].SetActive(true);                
-                slotOne.Obj[1].SetActive(true);
-                slotTwo.Obj[1].SetActive(true);
-                slotThree.Obj[1].SetActive(true);
-                slotFour.Obj[1].SetActive(true);
+                Slot_CS[slotLoop].SlotDisable();
             }
         }
+
         if (UIActive)
         {
             Inventory.transform.position = Anchor.transform.position;
             Inventory.transform.eulerAngles = new Vector3(Anchor.transform.eulerAngles.x + 15, Anchor.transform.eulerAngles.y, 0);
-
-
-            slotOne.Obj[0].SetActive(true);
-            slotTwo.Obj[0].SetActive(true);
-            slotThree.Obj[0].SetActive(true);
-            slotFour.Obj[0].SetActive(true);
-            slotOne.Obj[1].SetActive(true);
-            slotTwo.Obj[1].SetActive(true);
-            slotThree.Obj[1].SetActive(true);
-            slotFour.Obj[1].SetActive(true);
         }
     }
 }

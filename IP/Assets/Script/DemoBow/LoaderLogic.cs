@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -18,7 +15,7 @@ public class LoaderLogic : MonoBehaviour
 
     // Constrain for the String Line
     [SerializeField]
-    private float StringLineConstrain = 2f;
+    private float StringLineConstrain;
 
     // The Hand
     private Transform interactor;
@@ -107,7 +104,7 @@ public class LoaderLogic : MonoBehaviour
     private void HandleStringPulledBackToLimit(float loadGrabAreaLocalAbs, Vector3 loadGrabAreaLocalSpace)
     {
         // Set max pulling limit for the string.
-        if (loadGrabAreaLocalSpace.x < 0 && loadGrabAreaLocalAbs >= StringLineConstrain)
+        if (loadGrabAreaLocalSpace.z < 0 && loadGrabAreaLocalAbs >= StringLineConstrain)
         {
             strenght = 1;
 
