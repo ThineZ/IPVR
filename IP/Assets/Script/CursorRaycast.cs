@@ -1,4 +1,6 @@
+using System.Runtime.CompilerServices;
 using TMPro;
+using Unity.XR.OpenVR;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -17,17 +19,17 @@ public class CursorRaycast : MonoBehaviour
 
     public void InputOneSelect()
     {
-        if (Input.GetMouseButtonDown(0) && triggerEnter == true)
+        if (OVRInput.Get(OVRInput.RawButton.B) && triggerEnter == true)
         {
             InputFieldOne.Select();
             //InputFieldOne.OnSelect(new BaseEventData(EventSystem.current));
         }
-        else if (Input.GetMouseButtonDown(0) && triggerEnter == false)
+        else if (OVRInput.Get(OVRInput.RawButton.B) && triggerEnter == false)
         {
             InputFieldOne.OnDeselect(new BaseEventData(EventSystem.current));
         }
-    }   
-    
+    }
+
     private void Update()
     {
         InputOneSelect();

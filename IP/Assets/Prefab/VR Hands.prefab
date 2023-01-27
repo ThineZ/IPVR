@@ -15418,7 +15418,7 @@ MonoBehaviour:
   _parentPrefab: {fileID: 0}
   _avatarMode: 0
   _renderMode: -1
-  _showControllerHands: 1
+  _showControllerHands: 0
   _avatarRenderers:
   - {fileID: 3391428109853653646}
   - {fileID: 6220857414947743872}
@@ -15825,6 +15825,7 @@ MonoBehaviour:
         _distalLocalFingerPrintCenter: {x: -0.017647875, y: -0.009445742, z: -0}
   _handPosesFoldout: 1
   _handPoses:
+  - {fileID: 11400000, guid: d3da5ff6fdcc0104893808b43cacdc2e, type: 2}
   - {fileID: 11400000, guid: 4c32a51f8e2ef0d458abf514d2bfd7ec, type: 2}
   - {fileID: 11400000, guid: 696f04fa7dedc08458e332f10f0947b8, type: 2}
   - {fileID: 11400000, guid: 362fb6cef5dd33147bde4826973409f1, type: 2}
@@ -17015,7 +17016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3685614248226883196
 Transform:
   m_ObjectHideFlags: 0
@@ -25409,7 +25410,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -25418,7 +25419,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -25464,12 +25465,12 @@ MonoBehaviour:
       m_Name: Position
       m_Type: 0
       m_ExpectedControlType: Vector3
-      m_Id: 
+      m_Id: 305262f5-fdc0-4aa6-b5d1-f3f51336cd62
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 
+        m_Id: b14ea12e-a2dc-45ca-b239-485c8bcefa5a
         m_Path: <XRHMD>/centerEyePosition
         m_Interactions: 
         m_Processors: 
@@ -25484,12 +25485,12 @@ MonoBehaviour:
       m_Name: Rotation
       m_Type: 0
       m_ExpectedControlType: Quaternion
-      m_Id: 
+      m_Id: ba1199a4-59f8-4679-a999-b384beb6ae3f
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 
+        m_Id: 68b286ec-84d5-4301-8885-0e49119c1862
         m_Path: <XRHMD>/centerEyeRotation
         m_Interactions: 
         m_Processors: 
@@ -47801,7 +47802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8113168090379566092
 Transform:
   m_ObjectHideFlags: 0
