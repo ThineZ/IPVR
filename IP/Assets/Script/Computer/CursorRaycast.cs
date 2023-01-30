@@ -15,7 +15,6 @@ public class CursorRaycast : MonoBehaviour
     public Sprite DefaultCursor;
 
     public TMP_InputField InputFieldOne;
-    public Toggle checkPwd;
 
     public bool triggerEnter = false;
 
@@ -45,15 +44,6 @@ public class CursorRaycast : MonoBehaviour
                 {   
                     InputFieldOne.OnDeselect(new BaseEventData(EventSystem.current));
                 }
-            }
-
-            if (device.TryGetFeatureValue(CommonUsages.secondaryButton, out bool isToggle) && isToggle)
-            {
-                checkPwd.isOn = true;
-            }
-            else
-            {
-                checkPwd.isOn = false;
             }
         }
     }

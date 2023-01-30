@@ -13,6 +13,7 @@ TagManager:
   - Slot
   - IObjOne
   - IObjTwo
+  - Plug
   layers:
   - Default
   - TransparentFX
