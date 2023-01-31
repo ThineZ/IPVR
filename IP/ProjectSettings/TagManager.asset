@@ -14,6 +14,7 @@ TagManager:
   - IObjOne
   - IObjTwo
   - Plug
+  - Wood
   layers:
   - Default
   - TransparentFX
