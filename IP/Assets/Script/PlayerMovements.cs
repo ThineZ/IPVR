@@ -10,6 +10,8 @@ public class PlayerMovements : MonoBehaviour
     public Vector3 jump;
     public bool isGrounded;
 
+    public CapsuleCollider capsuleCollider;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -44,6 +46,18 @@ public class PlayerMovements : MonoBehaviour
 
                 rb.AddForce(jump * jumpAmount, ForceMode.Impulse);
                 isGrounded = false;
+            }
+
+            if (device.TryGetFeatureValue(CommonUsages.secondaryButton, out bool isXPressed) && isXPressed)
+            {
+                Debug.Log("Left Secondary Button is Pressed");
+
+                capsuleCollider.height = 0.0f;
+            }
+
+            if (device.TryGetFeatureValue(CommonUsages.secondaryButton, out bool isXXPressed) && isXXPressed == false)
+            {
+                capsuleCollider.height = 0.5f;
             }
         }
     }
