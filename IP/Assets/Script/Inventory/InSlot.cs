@@ -1,69 +1,68 @@
-using System.Diagnostics.Contracts;
 using UnityEngine;
-using UnityEngine.Pool;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class InSlot : MonoBehaviour
 {
-    public XRSocketInteractor sockets;
-
-    public GameObject[] Obj;
-
     public bool isEntered = false;
 
-    private void Awake()
+    [Header("Object List")]
+    [SerializeField] private GameObject[] Objects;
+
+    [SerializeField] private Vector3[] OriginScale;
+
+    public XRSocketInteractor interactor;
+
+    //foreach (GameObject obj in Objects)
+    //{
+    //    if (other.gameObject.tag == obj.tag)
+    //    {
+    //        Debug.Log("Object Tag " + obj.tag + " " + obj.name);
+
+    //        obj.gameObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);            
+    //    }
+    //}
+
+
+    //foreach (GameObject obj in Objects)
+    //{
+    //    foreach (var scale in OriginScale)
+    //    {
+    //        if (other.gameObject.tag == obj.tag)
+    //        {
+    //            Debug.Log("Object Tag " + obj.tag + " " + obj.name);
+
+    //            obj.gameObject.transform.localScale = scale;
+    //        }
+    //    }
+    //}
+    //Debug.Log("Item Exited");
+
+    public void ItemSelected(SelectEnterEventArgs args)
     {
-        sockets = GetComponent<XRSocketInteractor>();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "IObjOne")
+        foreach (GameObject obj in Objects)
         {
-            Debug.Log("Item Enter");
+            if(interactor.interactablesSelected.Count > 0)
+            {
+                Debug.Log("Object Tag " + obj.tag + " " + obj.name);
 
-            Obj[0].transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
-
-            isEntered = true;
-        }        
-        
-        if (other.gameObject.tag == "IObjTwo")
-        {
-            Debug.Log("Item Enter");
-
-            Obj[1].transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
-
-            isEntered = true;
+                obj.gameObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+            }
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    public void ItemExited(SelectExitEventArgs args)
     {
-        if (other.gameObject.tag == "IObjOne")
+        foreach (GameObject obj in Objects)
         {
-            Debug.Log("Item Exited");
+            foreach (var scale in OriginScale)
+            {
+                if (interactor.interactablesSelected.Count == 0)
+                {
+                    Debug.Log("Object Tag " + obj.tag + " " + obj.name);
 
-            Obj[0].transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-
-            isEntered = false;
-        }        
-        
-        if (other.gameObject.tag == "IObjTwo")
-        {
-            Debug.Log("Item Exited");
-
-            Obj[1].transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-
-            isEntered = false;
-        }
-    }
-
-    public void SlotDisable()
-    {
-        if (sockets.interactablesSelected.Count > 0 && isEntered == true)
-        {
-            sockets.interactablesSelected[0].transform.gameObject.SetActive(false);
-            Debug.Log("Obj Disable!");
+                    obj.gameObject.transform.localScale = scale;
+                }
+            }
         }
     }
 }
