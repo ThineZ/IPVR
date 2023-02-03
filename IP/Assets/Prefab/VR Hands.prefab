@@ -17489,19 +17489,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1831930993070325443}
-        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
-        m_MethodName: ItemSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -17553,9 +17541,11 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
   - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 0}
 --- !u!1 &3739783439592493770
 GameObject:
@@ -19066,19 +19056,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7661091525483710364}
-        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
-        m_MethodName: ItemSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -19130,9 +19108,11 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
   - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 7391805562298796237}
 --- !u!1 &4054109355518341917
 GameObject:
@@ -23791,19 +23771,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 315193649715360047}
-        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
-        m_MethodName: ItemSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -23855,9 +23823,11 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
   - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 5663963668581963735}
 --- !u!1 &5031493829449343615
 GameObject:
@@ -25360,19 +25330,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3400053689084161397}
-        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
-        m_MethodName: ItemSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -25424,9 +25382,11 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
   - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 7416803517740789612}
 --- !u!1 &5321706440877848163
 GameObject:
@@ -30562,19 +30522,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4291673859004804328}
-        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
-        m_MethodName: ItemSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -30626,9 +30574,11 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
   - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 1116006063934507194}
 --- !u!1 &6192190716694208090
 GameObject:
@@ -31051,19 +31001,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 233548372368725891}
-        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
-        m_MethodName: ItemSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -31115,9 +31053,11 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
   - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 243088364538643557}
 --- !u!1 &6272059182531514086
 GameObject:
@@ -48454,19 +48394,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 679588012773316744}
-        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
-        m_MethodName: ItemSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -48518,9 +48446,11 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
   - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 467624160209691860}
 --- !u!1 &7814341477910536124
 GameObject:
@@ -49991,19 +49921,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8998386744185739119}
-        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
-        m_MethodName: ItemSelected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -50055,9 +49973,11 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
   - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 5005125174046174882}
 --- !u!1 &8130310829455402422
 GameObject:
