@@ -1,28 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ArrowLogic : MonoBehaviour
 {
     [SerializeField]
-    private GameObject LoadAreaVisual, arrowPrefab, arrowSpawnPoint;
+    private GameObject midPointVisual, arrowPrefab, arrowSpawnPoint;
 
     [SerializeField]
     private float arrowMaxSpeed = 10;
 
+    [SerializeField]
+    private AudioSource bowReleaseAudioSource;
+
     public void PrepareArrow()
     {
-        LoadAreaVisual.SetActive(true);
+        midPointVisual.SetActive(true);
     }
 
-    public void ReleaseArrow(float strenght)
+    public void ReleaseArrow(float strength)
     {
-        LoadAreaVisual.SetActive(false);
+        bowReleaseAudioSource.Play();
+        midPointVisual.SetActive(false);
 
         GameObject arrow = Instantiate(arrowPrefab);
         arrow.transform.position = arrowSpawnPoint.transform.position;
-        arrow.transform.rotation = LoadAreaVisual.transform.rotation;
+        arrow.transform.rotation = midPointVisual.transform.rotation;
         Rigidbody rb = arrow.GetComponent<Rigidbody>();
-        rb.AddForce(LoadAreaVisual.transform.forward * strenght * arrowMaxSpeed, ForceMode.Impulse);
+        rb.AddForce(midPointVisual.transform.forward * strength * arrowMaxSpeed, ForceMode.Impulse);
+
     }
 }

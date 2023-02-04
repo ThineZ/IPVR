@@ -17541,12 +17541,10 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  interactor: {fileID: 0}
+  - {x: 1.7336, y: 1.7336, z: 1.7336}
+  interactor: {fileID: 6659834461583834999}
 --- !u!1 &3739783439592493770
 GameObject:
   m_ObjectHideFlags: 0
@@ -19108,11 +19106,9 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
+  - {x: 1.7336, y: 1.7336, z: 1.7336}
   interactor: {fileID: 7391805562298796237}
 --- !u!1 &4054109355518341917
 GameObject:
@@ -23823,11 +23819,9 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
+  - {x: 1.7336, y: 1.7336, z: 1.7336}
   interactor: {fileID: 5663963668581963735}
 --- !u!1 &5031493829449343615
 GameObject:
@@ -25382,11 +25376,9 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
+  - {x: 1.7336, y: 1.7336, z: 1.7336}
   interactor: {fileID: 7416803517740789612}
 --- !u!1 &5321706440877848163
 GameObject:
@@ -30574,11 +30566,9 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
+  - {x: 1.7336, y: 1.7336, z: 1.7336}
   interactor: {fileID: 1116006063934507194}
 --- !u!1 &6192190716694208090
 GameObject:
@@ -31053,11 +31043,9 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
+  - {x: 1.7336, y: 1.7336, z: 1.7336}
   interactor: {fileID: 243088364538643557}
 --- !u!1 &6272059182531514086
 GameObject:
@@ -48446,11 +48434,9 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
+  - {x: 1.7336, y: 1.7336, z: 1.7336}
   interactor: {fileID: 467624160209691860}
 --- !u!1 &7814341477910536124
 GameObject:
@@ -49973,11 +49959,9 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
+  - {x: 1.7336, y: 1.7336, z: 1.7336}
   interactor: {fileID: 5005125174046174882}
 --- !u!1 &8130310829455402422
 GameObject:

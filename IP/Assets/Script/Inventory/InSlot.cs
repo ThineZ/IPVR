@@ -63,20 +63,15 @@ public class InSlot : MonoBehaviour
                 {
                     Debug.Log("Object Tag " + obj.tag + " " + obj.name);
 
-                    Objects[0].gameObject.transform.localScale = OriginScale[0];                        
+                    Objects[0].gameObject.transform.localScale = OriginScale[0];
 
                 }
-                else if (obj.name == Objects[1].name)
+
+                if (obj.name == Objects[1].name)
                 {
                     Debug.Log("Object Tag " + obj.tag + " " + obj.name);
 
                     Objects[1].gameObject.transform.localScale = OriginScale[1];
-                }
-                else if (obj.name == Objects[2].name)
-                {
-                    Debug.Log("Object Tag " + obj.tag + " " + obj.name);
-
-                    Objects[2].gameObject.transform.localScale = OriginScale[2];
                 }
             }
         }
