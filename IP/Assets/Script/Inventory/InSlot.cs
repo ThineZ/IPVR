@@ -45,7 +45,11 @@ public class InSlot : MonoBehaviour
             {
                 Debug.Log("Object Tag " + obj.tag + " " + obj.name);
 
-                obj.gameObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+                obj.gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+
+                //Quaternion rotation = Quaternion.Euler(0.0f,-90.0f,0.0f);
+
+                //obj.gameObject.transform.rotation = rotation;
 
                 isEntered = true;
             }
@@ -73,6 +77,20 @@ public class InSlot : MonoBehaviour
 
                     Objects[1].gameObject.transform.localScale = OriginScale[1];
                 }
+
+                //if (obj.name == Objects[2].name)
+                //{
+                //    Debug.Log("Object Tag " + obj.name + " " + obj.name);
+
+                //    Objects[2].gameObject.transform.localScale = OriginScale[2];
+                //}                
+                
+                //if (obj.name == Objects[3].name)
+                //{
+                //    Debug.Log("Object Tag " + obj.name + " " + obj.name);
+
+                //    Objects[3].gameObject.transform.localScale = OriginScale[3];
+                //}
             }
         }
     }

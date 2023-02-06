@@ -15590,7 +15590,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5460623639833143053}
+  - {fileID: 4101803562731779162}
   - {fileID: 5460623639785650057}
   - {fileID: 5460623639261048753}
   - {fileID: 5460623640597726299}
@@ -16023,6 +16023,7 @@ MonoBehaviour:
         _distalLocalFingerPrintCenter: {x: -0.013690781, y: -0.0053090258, z: -0}
   _handPosesFoldout: 1
   _handPoses:
+  - {fileID: 11400000, guid: c771dc83d5beb604caba05fa536bffe5, type: 2}
   - {fileID: 11400000, guid: e08d2699f258dc64ca4b500e372a5652, type: 2}
   - {fileID: 11400000, guid: e630bfb7402a95b4dbd602a96ba9d025, type: 2}
   - {fileID: 11400000, guid: 3d4202398d4010a419867ce6afe482d0, type: 2}
@@ -17471,7 +17472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -17541,9 +17542,13 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
+  - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1.7336, y: 1.7336, z: 1.7336}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 6659834461583834999}
 --- !u!1 &3739783439592493770
 GameObject:
@@ -19036,7 +19041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -19106,9 +19111,13 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
+  - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1.7336, y: 1.7336, z: 1.7336}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 7391805562298796237}
 --- !u!1 &4054109355518341917
 GameObject:
@@ -23749,7 +23758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -23819,9 +23828,13 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
+  - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1.7336, y: 1.7336, z: 1.7336}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 5663963668581963735}
 --- !u!1 &5031493829449343615
 GameObject:
@@ -25306,7 +25319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -25376,9 +25389,13 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
+  - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1.7336, y: 1.7336, z: 1.7336}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 7416803517740789612}
 --- !u!1 &5321706440877848163
 GameObject:
@@ -26092,7 +26109,7 @@ GameObject:
   - component: {fileID: 5460623638560853459}
   - component: {fileID: 5460623638560853456}
   - component: {fileID: 5460623638560853457}
-  - component: {fileID: 5460623638560853458}
+  - component: {fileID: 2386447795576583943}
   m_Layer: 0
   m_Name: Right
   m_TagString: Untagged
@@ -26319,7 +26336,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5460623638560853458
+--- !u!114 &2386447795576583943
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26331,7 +26348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -26775,52 +26792,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
---- !u!1 &5460623639833143055
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5460623639833143053}
-  - component: {fileID: 5460623639833143054}
-  m_Layer: 0
-  m_Name: XR Interaction Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5460623639833143053
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5460623639833143055}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3512792646487847732}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5460623639833143054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5460623639833143055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
 --- !u!1 &5460623640597726308
 GameObject:
   m_ObjectHideFlags: 0
@@ -26832,7 +26803,7 @@ GameObject:
   - component: {fileID: 5460623640597726299}
   - component: {fileID: 5460623640597726296}
   - component: {fileID: 5460623640597726297}
-  - component: {fileID: 5460623640597726298}
+  - component: {fileID: 1660115053975228275}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -27060,7 +27031,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5460623640597726298
+--- !u!114 &1660115053975228275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27072,7 +27043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -28998,6 +28969,52 @@ Transform:
   m_Father: {fileID: 6218760230795413380}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5832918835456805430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4101803562731779162}
+  - component: {fileID: 8407386987966411678}
+  m_Layer: 0
+  m_Name: XR Custom Interaction Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4101803562731779162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5832918835456805430}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3512792646487847732}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8407386987966411678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5832918835456805430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63266bbebf63ce4498daff9d4f2b438d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
 --- !u!1 &5857598712705657118
 GameObject:
   m_ObjectHideFlags: 0
@@ -30496,7 +30513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -30566,9 +30583,13 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
+  - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1.7336, y: 1.7336, z: 1.7336}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 1116006063934507194}
 --- !u!1 &6192190716694208090
 GameObject:
@@ -30973,7 +30994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -31043,9 +31064,13 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
+  - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1.7336, y: 1.7336, z: 1.7336}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 243088364538643557}
 --- !u!1 &6272059182531514086
 GameObject:
@@ -48364,7 +48389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -48434,9 +48459,13 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
+  - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1.7336, y: 1.7336, z: 1.7336}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 467624160209691860}
 --- !u!1 &7814341477910536124
 GameObject:
@@ -49889,7 +49918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 5460623639833143054}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -49959,9 +49988,13 @@ MonoBehaviour:
   Objects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   OriginScale:
+  - {x: 0.1, y: 0.1, z: 0.1}
+  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1.7336, y: 1.7336, z: 1.7336}
+  - {x: 1, y: 1, z: 1}
   interactor: {fileID: 5005125174046174882}
 --- !u!1 &8130310829455402422
 GameObject:

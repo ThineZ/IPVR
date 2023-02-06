@@ -16,6 +16,7 @@ TagManager:
   - Plug
   - Wood
   - Ground
+  - Climbable
   layers:
   - Default
   - TransparentFX
