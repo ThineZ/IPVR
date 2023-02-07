@@ -607,8 +607,9 @@ GameObject:
   - component: {fileID: 1794516341862790292}
   - component: {fileID: 8311909565662893282}
   - component: {fileID: 720146166859187552}
+  - component: {fileID: 6762396827671292950}
   m_Layer: 0
-  m_Name: Slot
+  m_Name: Slot5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -673,6 +674,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &6762396827671292950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118174473448705506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &122901082623751379
 GameObject:
   m_ObjectHideFlags: 0
@@ -15724,20 +15738,20 @@ MonoBehaviour:
         _initialLocalRotation: {x: 0.039005104, y: -0.077951096, z: -0.09432525, w: 0.9917182}
         _initialLocalReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
         _initialUniversalLocalReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-        _initialPosition: {x: -0.16247232, y: 1.9788685, z: -2.6900835}
+        _initialPosition: {x: -0.16247232, y: 2.5898685, z: 0.031916376}
         _initialLocalPosition: {x: -0.059387933, y: -0.00000024288892, z: 0.0000000011920929}
       _handUniversalLocalAxes:
         _transform: {fileID: 2668829200800936111}
-        _localRight: {x: -0.057550848, y: 0.0051831612, z: 0.9983291}
-        _localUp: {x: 0.08969924, y: 0.9959689, z: -0}
-        _localForward: {x: -0.9943048, y: 0.08954936, z: -0.057783782}
-        _universalToActualAxesRotation: {x: 0.032649785, y: 0.72651625, z: 0.030814646,
-          w: 0.6856811}
+        _localRight: {x: -0.05755215, y: 0.0051832683, z: 0.99832904}
+        _localUp: {x: 0.08969906, y: 0.99596894, z: -0}
+        _localForward: {x: -0.9943048, y: 0.089549184, z: -0.057785094}
+        _universalToActualAxesRotation: {x: 0.03264974, y: 0.7265167, z: 0.030814562,
+          w: 0.6856806}
         _initialRotation: {x: -0.18301266, y: 0.18301266, z: 0.6830127, w: 0.6830127}
         _initialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
         _initialLocalReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
         _initialUniversalLocalReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-        _initialPosition: {x: -0.15, y: 2.0619998, z: -2.771}
+        _initialPosition: {x: -0.15, y: 2.6729999, z: -0.049}
         _initialLocalPosition: {x: -0, y: 0, z: 0}
       _armUniversalLocalAxes:
         _transform: {fileID: 0}
@@ -15783,88 +15797,88 @@ MonoBehaviour:
           _length: 0
           _radius: 0
         _proximalInfo:
-          _length: 0.027674777
-          _radius: 0.019055683
+          _length: 0.027674885
+          _radius: 0.025014028
         _intermediateInfo:
-          _length: 0.033078883
-          _radius: 0.012813593
+          _length: 0.03307883
+          _radius: 0.017571498
         _distalInfo:
-          _length: 0.038871072
-          _radius: 0.013963965
-        _distalLocalTip: {x: -0.038871072, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.025654908, y: 0.009216217, z: -0}
+          _length: 0.03654662
+          _radius: 0.01914692
+        _distalLocalTip: {x: -0.03654662, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.02412077, y: 0.012636967, z: -0}
       _indexInfo:
         _avatar: {fileID: 3512792646487847735}
         _side: 0
         _finger: 2
         _metacarpalInfo:
-          _length: 0.05938789
-          _radius: 0.018814791
+          _length: 0.05938773
+          _radius: 0.022186417
         _proximalInfo:
-          _length: 0.03340629
-          _radius: 0.013241278
+          _length: 0.033406325
+          _radius: 0.021950215
         _intermediateInfo:
-          _length: 0.023907421
-          _radius: 0.009940129
+          _length: 0.023907412
+          _radius: 0.009940181
         _distalInfo:
-          _length: 0.02408752
-          _radius: 0.008943567
-        _distalLocalTip: {x: -0.02408752, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.015897764, y: 0.0059027546, z: -0}
+          _length: 0.024087617
+          _radius: 0.008943575
+        _distalLocalTip: {x: -0.024087617, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.015897827, y: 0.00590276, z: -0}
       _middleInfo:
         _avatar: {fileID: 3512792646487847735}
         _side: 0
         _finger: 3
         _metacarpalInfo:
-          _length: 0.06234054
-          _radius: 0.023873746
+          _length: 0.062340617
+          _radius: 0.023873735
         _proximalInfo:
-          _length: 0.039041013
-          _radius: 0.014472715
+          _length: 0.039041124
+          _radius: 0.01993776
         _intermediateInfo:
-          _length: 0.029664751
-          _radius: 0.009446373
+          _length: 0.029664744
+          _radius: 0.009446308
         _distalInfo:
-          _length: 0.02530151
-          _radius: 0.008995686
-        _distalLocalTip: {x: -0.02530151, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.016698997, y: 0.005937153, z: -0}
+          _length: 0.02530149
+          _radius: 0.008995637
+        _distalLocalTip: {x: -0.02530149, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.016698984, y: 0.005937121, z: -0}
       _ringInfo:
         _avatar: {fileID: 3512792646487847735}
         _side: 0
         _finger: 4
         _metacarpalInfo:
-          _length: 0.060953457
-          _radius: 0.017707642
+          _length: 0.06095345
+          _radius: 0.017247472
         _proximalInfo:
-          _length: 0.036577012
-          _radius: 0.020859843
+          _length: 0.0365769
+          _radius: 0.014173372
         _intermediateInfo:
-          _length: 0.028493289
-          _radius: 0.008766461
+          _length: 0.028493257
+          _radius: 0.008766426
         _distalInfo:
-          _length: 0.023034591
-          _radius: 0.008640323
-        _distalLocalTip: {x: -0.023034591, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.015202831, y: 0.0057026134, z: -0}
+          _length: 0.023034398
+          _radius: 0.008640307
+        _distalLocalTip: {x: -0.023034398, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.015202703, y: 0.0057026027, z: -0}
       _littleInfo:
         _avatar: {fileID: 3512792646487847735}
         _side: 0
         _finger: 5
         _metacarpalInfo:
-          _length: 0.056403164
-          _radius: 0.020758469
+          _length: 0.05640312
+          _radius: 0.019417675
         _proximalInfo:
-          _length: 0.033131633
-          _radius: 0.039222617
+          _length: 0.033131912
+          _radius: 0.013066751
         _intermediateInfo:
-          _length: 0.02183801
-          _radius: 0.017517203
+          _length: 0.021837877
+          _radius: 0.010018456
         _distalInfo:
-          _length: 0.020743655
-          _radius: 0.008043867
-        _distalLocalTip: {x: -0.020743655, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.0136908125, y: 0.005308952, z: -0}
+          _length: 0.020743646
+          _radius: 0.008043972
+        _distalLocalTip: {x: -0.020743646, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.013690807, y: 0.0053090216, z: -0}
     _rightArmInfo:
       _avatar: {fileID: 3512792646487847735}
       _side: 1
@@ -15880,20 +15894,20 @@ MonoBehaviour:
         _initialLocalRotation: {x: -0.039005075, y: -0.07795112, z: 0.094325244, w: 0.9917182}
         _initialLocalReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
         _initialUniversalLocalReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-        _initialPosition: {x: 0.16247222, y: 1.9761686, z: -2.6896837}
+        _initialPosition: {x: 0.16247222, y: 2.5871687, z: 0.032316204}
         _initialLocalPosition: {x: -0.059387956, y: 0.0000002901256, z: -0.00000009894371}
       _handUniversalLocalAxes:
         _transform: {fileID: 3834578149585202444}
-        _localRight: {x: 0.05755277, y: 0.005183133, z: -0.99832904}
-        _localUp: {x: 0.08969579, y: -0.99596924, z: 0}
-        _localForward: {x: -0.99430496, y: -0.089545906, z: -0.05778569}
-        _universalToActualAxesRotation: {x: -0.72651696, y: -0.032648556, z: 0.6856805,
-          w: 0.030813426}
+        _localRight: {x: 0.057552975, y: 0.0051831547, z: -0.99832904}
+        _localUp: {x: 0.08969584, y: -0.9959692, z: 0}
+        _localForward: {x: -0.994305, y: -0.089545965, z: -0.0577859}
+        _universalToActualAxesRotation: {x: -0.726517, y: -0.03264858, z: 0.68568045,
+          w: 0.030813444}
         _initialRotation: {x: -0.18301266, y: 0.18301266, z: 0.6830127, w: 0.6830127}
         _initialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
         _initialLocalReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
         _initialUniversalLocalReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-        _initialPosition: {x: 0.15, y: 2.0593, z: -2.7705998}
+        _initialPosition: {x: 0.15, y: 2.6703, z: -0.0486}
         _initialLocalPosition: {x: -0, y: 0, z: 0}
       _armUniversalLocalAxes:
         _transform: {fileID: 0}
@@ -15939,88 +15953,88 @@ MonoBehaviour:
           _length: 0
           _radius: 0
         _proximalInfo:
-          _length: 0.027675005
-          _radius: 0.019050172
+          _length: 0.02767493
+          _radius: 0.025006145
         _intermediateInfo:
-          _length: 0.033078637
-          _radius: 0.012808166
+          _length: 0.03307874
+          _radius: 0.017566066
         _distalInfo:
-          _length: 0.03886231
-          _radius: 0.013954857
-        _distalLocalTip: {x: -0.03886231, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.025649127, y: -0.009210207, z: -0}
+          _length: 0.036546573
+          _radius: 0.019137839
+        _distalLocalTip: {x: -0.036546573, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.024120739, y: -0.012630974, z: -0}
       _indexInfo:
         _avatar: {fileID: 3512792646487847735}
         _side: 1
         _finger: 2
         _metacarpalInfo:
-          _length: 0.059388038
-          _radius: 0.018814031
+          _length: 0.05938778
+          _radius: 0.02218004
         _proximalInfo:
-          _length: 0.03340655
-          _radius: 0.013241347
+          _length: 0.03340666
+          _radius: 0.021937866
         _intermediateInfo:
-          _length: 0.023907289
-          _radius: 0.0099401325
+          _length: 0.023907306
+          _radius: 0.009940103
         _distalInfo:
-          _length: 0.0240874
-          _radius: 0.008943617
-        _distalLocalTip: {x: -0.0240874, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.015897684, y: -0.0059027877, z: -0}
+          _length: 0.024087342
+          _radius: 0.008943581
+        _distalLocalTip: {x: -0.024087342, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.015897647, y: -0.005902764, z: -0}
       _middleInfo:
         _avatar: {fileID: 3512792646487847735}
         _side: 1
         _finger: 3
         _metacarpalInfo:
-          _length: 0.062340923
-          _radius: 0.023873739
+          _length: 0.06234079
+          _radius: 0.023873746
         _proximalInfo:
-          _length: 0.039041113
-          _radius: 0.014477835
+          _length: 0.039041046
+          _radius: 0.019929424
         _intermediateInfo:
-          _length: 0.02966509
-          _radius: 0.009446367
+          _length: 0.029665235
+          _radius: 0.009446301
         _distalInfo:
-          _length: 0.025301613
-          _radius: 0.008995583
-        _distalLocalTip: {x: -0.025301613, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.016699065, y: -0.005937085, z: -0}
+          _length: 0.025301686
+          _radius: 0.008995628
+        _distalLocalTip: {x: -0.025301686, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.016699113, y: -0.005937115, z: -0}
       _ringInfo:
         _avatar: {fileID: 3512792646487847735}
         _side: 1
         _finger: 4
         _metacarpalInfo:
-          _length: 0.06095342
-          _radius: 0.017706826
+          _length: 0.06095352
+          _radius: 0.017246652
         _proximalInfo:
-          _length: 0.036576703
-          _radius: 0.020863606
+          _length: 0.036576867
+          _radius: 0.014170252
         _intermediateInfo:
-          _length: 0.028493559
-          _radius: 0.008766521
+          _length: 0.028493434
+          _radius: 0.008766377
         _distalInfo:
-          _length: 0.023034511
-          _radius: 0.008640317
-        _distalLocalTip: {x: -0.023034511, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.015202778, y: -0.0057026097, z: -0}
+          _length: 0.023034573
+          _radius: 0.008640305
+        _distalLocalTip: {x: -0.023034573, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.015202818, y: -0.0057026017, z: -0}
       _littleInfo:
         _avatar: {fileID: 3512792646487847735}
         _side: 1
         _finger: 5
         _metacarpalInfo:
-          _length: 0.056403097
-          _radius: 0.020760449
+          _length: 0.056402948
+          _radius: 0.019417591
         _proximalInfo:
-          _length: 0.03313146
-          _radius: 0.03922673
+          _length: 0.0331316
+          _radius: 0.013064331
         _intermediateInfo:
-          _length: 0.02183794
-          _radius: 0.017518641
+          _length: 0.021837953
+          _radius: 0.010017502
         _distalInfo:
-          _length: 0.020743607
-          _radius: 0.008043978
-        _distalLocalTip: {x: -0.020743607, y: -0, z: -0}
-        _distalLocalFingerPrintCenter: {x: -0.013690781, y: -0.0053090258, z: -0}
+          _length: 0.020743646
+          _radius: 0.008043999
+        _distalLocalTip: {x: -0.020743646, y: -0, z: -0}
+        _distalLocalFingerPrintCenter: {x: -0.013690807, y: -0.0053090393, z: -0}
   _handPosesFoldout: 1
   _handPoses:
   - {fileID: 11400000, guid: c771dc83d5beb604caba05fa536bffe5, type: 2}
@@ -17424,7 +17438,7 @@ GameObject:
   - component: {fileID: 6938943161040335520}
   - component: {fileID: 2030935260232994790}
   - component: {fileID: 6659834461583834999}
-  - component: {fileID: 1831930993070325443}
+  - component: {fileID: 1364339675526210176}
   m_Layer: 0
   m_Name: Socket Interactor
   m_TagString: Untagged
@@ -17440,7 +17454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3727610727214948191}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17458,7 +17472,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6659834461583834999
 MonoBehaviour:
@@ -17490,11 +17504,23 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1364339675526210176}
+        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
+        m_MethodName: ItemEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1831930993070325443}
+      - m_Target: {fileID: 1364339675526210176}
         m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
         m_MethodName: ItemExited
         m_Mode: 0
@@ -17526,7 +17552,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!114 &1831930993070325443
+--- !u!114 &1364339675526210176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17540,15 +17566,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEntered: 0
   Objects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2421617152793164183, guid: c92a93ce21150d944812511ba4ab4b5a, type: 3}
   - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1, y: 1, z: 1}
+  - {x: 0.01, y: 0.01, z: 0.01}
   interactor: {fileID: 6659834461583834999}
 --- !u!1 &3739783439592493770
 GameObject:
@@ -17890,8 +17912,9 @@ GameObject:
   - component: {fileID: 7711122114209631989}
   - component: {fileID: 5022289284381700631}
   - component: {fileID: 4820226231764514039}
+  - component: {fileID: 5748953678810649367}
   m_Layer: 0
-  m_Name: Slot
+  m_Name: Slot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17956,6 +17979,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &5748953678810649367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3853593566403146995}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3860385910038617201
 GameObject:
   m_ObjectHideFlags: 0
@@ -18993,7 +19029,7 @@ GameObject:
   - component: {fileID: 5972857545877747494}
   - component: {fileID: 5506196847840545123}
   - component: {fileID: 7391805562298796237}
-  - component: {fileID: 7661091525483710364}
+  - component: {fileID: 7560703162097016879}
   m_Layer: 0
   m_Name: Socket Interactor
   m_TagString: Untagged
@@ -19009,7 +19045,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4032111532632532724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19027,7 +19063,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7391805562298796237
 MonoBehaviour:
@@ -19059,11 +19095,23 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7560703162097016879}
+        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
+        m_MethodName: ItemEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7661091525483710364}
+      - m_Target: {fileID: 7560703162097016879}
         m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
         m_MethodName: ItemExited
         m_Mode: 0
@@ -19095,7 +19143,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!114 &7661091525483710364
+--- !u!114 &7560703162097016879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19109,15 +19157,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEntered: 0
   Objects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2421617152793164183, guid: c92a93ce21150d944812511ba4ab4b5a, type: 3}
   - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1, y: 1, z: 1}
+  - {x: 0.01, y: 0.01, z: 0.01}
   interactor: {fileID: 7391805562298796237}
 --- !u!1 &4054109355518341917
 GameObject:
@@ -21598,8 +21642,9 @@ GameObject:
   - component: {fileID: 1557662220205740116}
   - component: {fileID: 1993321848749856995}
   - component: {fileID: 8595627276454222266}
+  - component: {fileID: 8363659700306256401}
   m_Layer: 0
-  m_Name: Slot
+  m_Name: Slot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21664,6 +21709,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &8363659700306256401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4543816395566224890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4555646827167353454
 GameObject:
   m_ObjectHideFlags: 0
@@ -23462,8 +23520,9 @@ GameObject:
   - component: {fileID: 3557207788311371464}
   - component: {fileID: 8180581109645374164}
   - component: {fileID: 7260621522751295872}
+  - component: {fileID: 4238280539826288679}
   m_Layer: 0
-  m_Name: Slot
+  m_Name: Slot6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23528,6 +23587,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &4238280539826288679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5005855141096091414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5005887531031259564
 GameObject:
   m_ObjectHideFlags: 0
@@ -23710,7 +23782,7 @@ GameObject:
   - component: {fileID: 4138192470489296785}
   - component: {fileID: 7324918532353908534}
   - component: {fileID: 5663963668581963735}
-  - component: {fileID: 315193649715360047}
+  - component: {fileID: 8624601421299181769}
   m_Layer: 0
   m_Name: Socket Interactor
   m_TagString: Untagged
@@ -23726,7 +23798,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5024600226422708197}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23744,7 +23816,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5663963668581963735
 MonoBehaviour:
@@ -23776,11 +23848,23 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8624601421299181769}
+        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
+        m_MethodName: ItemEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 315193649715360047}
+      - m_Target: {fileID: 8624601421299181769}
         m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
         m_MethodName: ItemExited
         m_Mode: 0
@@ -23812,7 +23896,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!114 &315193649715360047
+--- !u!114 &8624601421299181769
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23826,15 +23910,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEntered: 0
   Objects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2421617152793164183, guid: c92a93ce21150d944812511ba4ab4b5a, type: 3}
   - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1, y: 1, z: 1}
+  - {x: 0.01, y: 0.01, z: 0.01}
   interactor: {fileID: 5663963668581963735}
 --- !u!1 &5031493829449343615
 GameObject:
@@ -25271,7 +25351,7 @@ GameObject:
   - component: {fileID: 5155522860834446067}
   - component: {fileID: 8954735051342569170}
   - component: {fileID: 7416803517740789612}
-  - component: {fileID: 3400053689084161397}
+  - component: {fileID: 929589498965626941}
   m_Layer: 0
   m_Name: Socket Interactor
   m_TagString: Untagged
@@ -25287,7 +25367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5316288289748872937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25305,7 +25385,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7416803517740789612
 MonoBehaviour:
@@ -25337,11 +25417,23 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 929589498965626941}
+        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
+        m_MethodName: ItemEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3400053689084161397}
+      - m_Target: {fileID: 929589498965626941}
         m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
         m_MethodName: ItemExited
         m_Mode: 0
@@ -25373,7 +25465,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!114 &3400053689084161397
+--- !u!114 &929589498965626941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25387,15 +25479,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEntered: 0
   Objects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2421617152793164183, guid: c92a93ce21150d944812511ba4ab4b5a, type: 3}
   - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1, y: 1, z: 1}
+  - {x: 0.01, y: 0.01, z: 0.01}
   interactor: {fileID: 7416803517740789612}
 --- !u!1 &5321706440877848163
 GameObject:
@@ -26334,7 +26422,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.09
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2386447795576583943
 MonoBehaviour:
@@ -27029,7 +27117,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.09
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1660115053975228275
 MonoBehaviour:
@@ -29293,8 +29381,9 @@ GameObject:
   - component: {fileID: 4448900526295300901}
   - component: {fileID: 3499653998307979044}
   - component: {fileID: 3268159705079212914}
+  - component: {fileID: 4536361629184580324}
   m_Layer: 0
-  m_Name: Slot
+  m_Name: Slot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29359,6 +29448,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &4536361629184580324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948862676604658991}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5949767546514534948
 GameObject:
   m_ObjectHideFlags: 0
@@ -30465,7 +30567,7 @@ GameObject:
   - component: {fileID: 7781387663931474860}
   - component: {fileID: 1462140804181309696}
   - component: {fileID: 1116006063934507194}
-  - component: {fileID: 4291673859004804328}
+  - component: {fileID: 4547086309535111036}
   m_Layer: 0
   m_Name: Socket Interactor
   m_TagString: Untagged
@@ -30481,7 +30583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6175051174604014837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30499,7 +30601,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1116006063934507194
 MonoBehaviour:
@@ -30531,11 +30633,23 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4547086309535111036}
+        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
+        m_MethodName: ItemEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4291673859004804328}
+      - m_Target: {fileID: 4547086309535111036}
         m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
         m_MethodName: ItemExited
         m_Mode: 0
@@ -30567,7 +30681,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!114 &4291673859004804328
+--- !u!114 &4547086309535111036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30581,15 +30695,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEntered: 0
   Objects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2421617152793164183, guid: c92a93ce21150d944812511ba4ab4b5a, type: 3}
   - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1, y: 1, z: 1}
+  - {x: 0.01, y: 0.01, z: 0.01}
   interactor: {fileID: 1116006063934507194}
 --- !u!1 &6192190716694208090
 GameObject:
@@ -30946,7 +31056,7 @@ GameObject:
   - component: {fileID: 8635580133224977847}
   - component: {fileID: 1401997416075435116}
   - component: {fileID: 243088364538643557}
-  - component: {fileID: 233548372368725891}
+  - component: {fileID: 6822882786465817801}
   m_Layer: 0
   m_Name: Socket Interactor
   m_TagString: Untagged
@@ -30962,7 +31072,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6268849822799598686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30980,7 +31090,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &243088364538643557
 MonoBehaviour:
@@ -31012,11 +31122,23 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6822882786465817801}
+        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
+        m_MethodName: ItemEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 233548372368725891}
+      - m_Target: {fileID: 6822882786465817801}
         m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
         m_MethodName: ItemExited
         m_Mode: 0
@@ -31048,7 +31170,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!114 &233548372368725891
+--- !u!114 &6822882786465817801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31062,15 +31184,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEntered: 0
   Objects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2421617152793164183, guid: c92a93ce21150d944812511ba4ab4b5a, type: 3}
   - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1, y: 1, z: 1}
+  - {x: 0.01, y: 0.01, z: 0.01}
   interactor: {fileID: 243088364538643557}
 --- !u!1 &6272059182531514086
 GameObject:
@@ -32154,8 +32272,9 @@ GameObject:
   - component: {fileID: 6727785525562493046}
   - component: {fileID: 4911481718857003929}
   - component: {fileID: 6309030496315192880}
+  - component: {fileID: 677983076475179235}
   m_Layer: 0
-  m_Name: Slot
+  m_Name: Slot7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32220,6 +32339,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &677983076475179235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542262078532642363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6551297031585853381
 GameObject:
   m_ObjectHideFlags: 0
@@ -48341,7 +48473,7 @@ GameObject:
   - component: {fileID: 4135198376918642678}
   - component: {fileID: 5932064158208388958}
   - component: {fileID: 467624160209691860}
-  - component: {fileID: 679588012773316744}
+  - component: {fileID: 2916503337443755151}
   m_Layer: 0
   m_Name: Socket Interactor
   m_TagString: Untagged
@@ -48357,7 +48489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7759897541247262993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48375,7 +48507,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &467624160209691860
 MonoBehaviour:
@@ -48407,11 +48539,23 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2916503337443755151}
+        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
+        m_MethodName: ItemEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 679588012773316744}
+      - m_Target: {fileID: 2916503337443755151}
         m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
         m_MethodName: ItemExited
         m_Mode: 0
@@ -48443,7 +48587,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!114 &679588012773316744
+--- !u!114 &2916503337443755151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48457,15 +48601,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEntered: 0
   Objects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2421617152793164183, guid: c92a93ce21150d944812511ba4ab4b5a, type: 3}
   - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1, y: 1, z: 1}
+  - {x: 0.01, y: 0.01, z: 0.01}
   interactor: {fileID: 467624160209691860}
 --- !u!1 &7814341477910536124
 GameObject:
@@ -49342,8 +49482,9 @@ GameObject:
   - component: {fileID: 8382296968471418576}
   - component: {fileID: 4269041843162381931}
   - component: {fileID: 5437263447336296932}
+  - component: {fileID: 2615072979034129770}
   m_Layer: 0
-  m_Name: Slot
+  m_Name: Slot8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49408,6 +49549,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &2615072979034129770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8058195945970084582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8058724273203134486
 GameObject:
   m_ObjectHideFlags: 0
@@ -49419,8 +49573,9 @@ GameObject:
   - component: {fileID: 2335097733137584002}
   - component: {fileID: 7984680404108817082}
   - component: {fileID: 4930730261999267420}
+  - component: {fileID: 5678606062734905447}
   m_Layer: 0
-  m_Name: Slot
+  m_Name: Slot4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49485,6 +49640,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &5678606062734905447
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8058724273203134486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8071894368428325514
 GameObject:
   m_ObjectHideFlags: 0
@@ -49870,7 +50038,7 @@ GameObject:
   - component: {fileID: 668202985681431595}
   - component: {fileID: 5263432592714006730}
   - component: {fileID: 5005125174046174882}
-  - component: {fileID: 8998386744185739119}
+  - component: {fileID: 1812425810677591124}
   m_Layer: 0
   m_Name: Socket Interactor
   m_TagString: Untagged
@@ -49886,7 +50054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8124734533271152347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49904,7 +50072,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5005125174046174882
 MonoBehaviour:
@@ -49936,11 +50104,23 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1812425810677591124}
+        m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
+        m_MethodName: ItemEntered
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8998386744185739119}
+      - m_Target: {fileID: 1812425810677591124}
         m_TargetAssemblyTypeName: InSlot, Assembly-CSharp
         m_MethodName: ItemExited
         m_Mode: 0
@@ -49972,7 +50152,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!114 &8998386744185739119
+--- !u!114 &1812425810677591124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49986,15 +50166,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEntered: 0
   Objects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2421617152793164183, guid: c92a93ce21150d944812511ba4ab4b5a, type: 3}
   - {fileID: 0}
   OriginScale:
-  - {x: 0.1, y: 0.1, z: 0.1}
-  - {x: 0.1, y: 0.1, z: 0.1}
   - {x: 1, y: 1, z: 1}
-  - {x: 1, y: 1, z: 1}
+  - {x: 0.01, y: 0.01, z: 0.01}
   interactor: {fileID: 5005125174046174882}
 --- !u!1 &8130310829455402422
 GameObject:

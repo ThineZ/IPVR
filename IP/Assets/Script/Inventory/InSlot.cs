@@ -37,21 +37,43 @@ public class InSlot : MonoBehaviour
     //}
     //Debug.Log("Item Exited");
 
-    private void OnTriggerStay(Collider other)
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    foreach (GameObject obj in Objects)
+    //    {
+    //        if (other.gameObject.name == obj.name)
+    //        {
+    //            Debug.Log("Object Tag " + obj.tag + " " + obj.name);
+
+    //            obj.gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+
+    //            isEntered = true;
+    //        }
+    //    }
+    //}
+
+    public void ItemEntered(SelectEnterEventArgs args)
     {
         foreach (GameObject obj in Objects)
         {
-            if (other.gameObject.name == obj.name)
+            if (args.interactorObject.interactablesSelected.Count > 0)
             {
-                Debug.Log("Object Tag " + obj.tag + " " + obj.name);
+                if (obj.name == Objects[0].name)
+                {
+                    Debug.Log("Object Name " + Objects[0].name);
 
-                obj.gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                    Objects[0].transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
 
-                //Quaternion rotation = Quaternion.Euler(0.0f,-90.0f,0.0f);
+                    isEntered = true;
+                }
+                if (obj.name == Objects[1].name)
+                {
+                    Debug.Log("Object Tag " + Objects[1].name);
 
-                //obj.gameObject.transform.rotation = rotation;
+                    Objects[1].transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
 
-                isEntered = true;
+                    isEntered = true;
+                }
             }
         }
     }
@@ -61,7 +83,7 @@ public class InSlot : MonoBehaviour
     {
         foreach (GameObject obj in Objects)
         {
-            if (interactor.interactablesSelected.Count == 0)
+            if (args.interactorObject.interactablesSelected.Count == 0)
             {
                 if (obj.name == Objects[0].name)
                 {
@@ -69,6 +91,7 @@ public class InSlot : MonoBehaviour
 
                     Objects[0].gameObject.transform.localScale = OriginScale[0];
 
+                    isEntered = false;
                 }
 
                 if (obj.name == Objects[1].name)
@@ -76,6 +99,8 @@ public class InSlot : MonoBehaviour
                     Debug.Log("Object Tag " + obj.tag + " " + obj.name);
 
                     Objects[1].gameObject.transform.localScale = OriginScale[1];
+
+                    isEntered = false;
                 }
 
                 //if (obj.name == Objects[2].name)

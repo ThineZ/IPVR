@@ -235,7 +235,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 {
                     ""name"": """",
                     ""id"": ""2ffdbbd5-8d56-4745-8939-5f60f1e708b2"",
-                    ""path"": ""<OculusTouchController>/deviceVelocity"",
+                    ""path"": ""<OculusTouchController>{LeftHand}/devicePose/velocity"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -745,7 +745,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 {
                     ""name"": """",
                     ""id"": ""4d2a05e5-4f26-4705-887e-8c5ce2680a5e"",
-                    ""path"": ""<OculusTouchController>{RightHand}/deviceVelocity"",
+                    ""path"": ""<OculusTouchController>{RightHand}/devicePose/velocity"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
