@@ -20,6 +20,7 @@ TagManager:
   - Axe
   - Bow
   - Spear
+  - SignUpBTN
   layers:
   - Default
   - TransparentFX
