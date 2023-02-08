@@ -52,7 +52,7 @@ public class PlayerMovements : MonoBehaviour
             {
                 Debug.Log("Left Secondary Button is Pressed");
 
-                capsuleCollider.height = 0.0f;
+                capsuleCollider.height = -0.1f;
             }
 
             if (device.TryGetFeatureValue(CommonUsages.secondaryButton, out bool isXXPressed) && isXXPressed == false)

@@ -19,6 +19,7 @@ TagManager:
   - Climbable
   - Axe
   - Bow
+  - Spear
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Bow
   - Arrow
   - Grab Ignore Raycast
-  - 
+  - Wall
   - 
   - 
   - 
