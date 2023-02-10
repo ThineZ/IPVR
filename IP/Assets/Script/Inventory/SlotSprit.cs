@@ -7,45 +7,41 @@ public class SlotSprit : MonoBehaviour
     [SerializeField] private GameObject[] Items;
 
     [Header("Item Picture")]
-    [SerializeField] private Image[] ItemPicture;
+    [SerializeField] private Image ItemPicture;
 
     [Header("Item Sprite")]
     [SerializeField] private Sprite[] ItemSprite;
 
+    [Header("Slot List")]
+    [SerializeField] private GameObject Slots;
+
     [SerializeField] bool isSlotIn = false;
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Axe")
-        {
-            ItemPicture[0].sprite = ItemSprite[0];
 
-            Items[0].transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-
-            isSlotIn = true;
-        }
-
-        if (other.gameObject.tag == "Bow")
-        {
-            ItemPicture[1].sprite = ItemSprite[1];
-
-            Items[1].transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
-
-            isSlotIn = true;
-        }
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Axe")
         {
-            ItemPicture[0].sprite = ItemSprite[0];
+            ItemPicture.sprite = ItemSprite[0];
+
+            Items[0].transform.SetParent(Slots.transform, true);
+
+            Items[0].GetComponent<Rigidbody>().isKinematic = true;
+
+            Debug.Log(Slots.transform.name);
 
             isSlotIn = true;
         }
 
         if (other.gameObject.tag == "Bow")
         {
-            ItemPicture[1].sprite = ItemSprite[1];
+            ItemPicture.sprite = ItemSprite[1];
+
+            Items[1].transform.SetParent(Slots.transform, true);
+
+            Items[1].GetComponent<Rigidbody>().isKinematic = true;
+            
+            Debug.Log(Slots.transform.name);
 
             isSlotIn = true;
         }
@@ -53,18 +49,27 @@ public class SlotSprit : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+
         if (other.gameObject.tag == "Axe")
         {
-            ItemPicture[0].sprite = null;
+            ItemPicture.sprite = null;
 
             isSlotIn = false;
+
+            Items[0].transform.SetParent(null);
+
+            Items[0].GetComponent<Rigidbody>().isKinematic = false;
         }
 
         if (other.gameObject.tag == "Bow")
         {
-            ItemPicture[1].sprite = null;
+            ItemPicture.sprite = null;
 
             isSlotIn = false;
+
+            Items[1].transform.SetParent(null);
+
+            Items[1].GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 }

@@ -10,6 +10,8 @@ public class InSlot : MonoBehaviour
 
     [SerializeField] private Vector3[] OriginScale;
 
+    public GameObject[] Slots;
+
     public XRSocketInteractor interactor;
 
     //foreach (GameObject obj in Objects)
@@ -56,23 +58,28 @@ public class InSlot : MonoBehaviour
     {
         foreach (GameObject obj in Objects)
         {
-            if (args.interactorObject.interactablesSelected.Count > 0)
+            foreach (GameObject slot in Slots)
             {
-                if (obj.name == Objects[0].name)
+                if (args.interactorObject.interactablesSelected.Count > 0)
                 {
-                    Debug.Log("Object Name " + Objects[0].name);
+                    if (obj.name == Objects[0].name)
+                    {
+                        Debug.Log("Object Name " + Objects[0].name);
 
-                    Objects[0].transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                        Objects[0].transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
 
-                    isEntered = true;
-                }
-                if (obj.name == Objects[1].name)
-                {
-                    Debug.Log("Object Tag " + Objects[1].name);
+                        //Objects[0].transform.SetParent(slot.transform, true);
 
-                    Objects[1].transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
+                        isEntered = true;
+                    }
+                    if (obj.name == Objects[1].name)
+                    {
+                        Debug.Log("Object Tag " + Objects[1].name);
 
-                    isEntered = true;
+                        Objects[1].transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
+
+                        isEntered = true;
+                    }
                 }
             }
         }

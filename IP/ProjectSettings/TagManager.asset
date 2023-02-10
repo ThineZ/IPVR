@@ -21,6 +21,7 @@ TagManager:
   - Bow
   - Spear
   - SignUpBTN
+  - Rod
   layers:
   - Default
   - TransparentFX

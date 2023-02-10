@@ -1,10 +1,7 @@
 using System.Collections.Generic;
-using UltimateXR.Extensions.Unity;
-using Unity.VisualScripting;
 using Unity.XR.Oculus;
 using UnityEngine;
 using UnityEngine.XR;
-using Unity.XR.OpenVR;
 
 public class SpawnInventory : MonoBehaviour
 {
