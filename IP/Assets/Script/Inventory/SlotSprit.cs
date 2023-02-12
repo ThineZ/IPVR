@@ -17,12 +17,13 @@ public class SlotSprit : MonoBehaviour
 
     [SerializeField] bool isSlotIn = false;
 
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Axe")
         {
             ItemPicture.sprite = ItemSprite[0];
+
+            Items[0] = GameObject.Find("AxeV2(Clone)");
 
             Items[0].transform.SetParent(Slots.transform, true);
 
@@ -36,6 +37,8 @@ public class SlotSprit : MonoBehaviour
         if (other.gameObject.tag == "Bow")
         {
             ItemPicture.sprite = ItemSprite[1];
+
+            Items[1] = GameObject.Find("BowBB(Clone)");
 
             Items[1].transform.SetParent(Slots.transform, true);
 

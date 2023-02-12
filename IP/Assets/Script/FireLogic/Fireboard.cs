@@ -15,7 +15,6 @@ public class Fireboard : MonoBehaviour
     [Header("Counter for Rotation")]
     [SerializeField] private int CounterRotation;
 
-    [Header("Fire VFX")]
     public ParticleSystem Fire;
 
     private Vector3 CurrentPos;
@@ -28,9 +27,9 @@ public class Fireboard : MonoBehaviour
 
     private void Start()
     {
-        Fire = GetComponent<ParticleSystem>();
-        var StartLiftime = Fire.main.startLifetime;
-        StartLiftime.constant = 0;
+        Fire = GameObject.Find("Fire").GetComponent<ParticleSystem>();
+        var em = Fire.emission;
+        em.rateOverTime = 0.0f;
     }
 
     private void Update()
@@ -42,6 +41,8 @@ public class Fireboard : MonoBehaviour
     {
         if (other.gameObject.tag == "Rod")
         {
+            var em = Fire.emission;
+
             CurrentPos = FireRod.transform.position;
 
             Vector3 DiffPos = CurrentPos - PreviousPos;
@@ -57,6 +58,7 @@ public class Fireboard : MonoBehaviour
                 if (CounterRotation >= 1)
                 {
                     LoaderSlider.value += (float)0.05;
+                    
 
                     if (LoaderSlider.value >= 0.3)
                     {
@@ -70,6 +72,7 @@ public class Fireboard : MonoBehaviour
                             {
                                 LoaderSlider.value = 1;
                                 // Cast the Fire
+                                em.rateOverTime = 10.0f;
                             }
                         }
                     }
@@ -102,7 +105,7 @@ public class Fireboard : MonoBehaviour
     {
         if (LoaderSlider.value >= 0 && LoaderSlider.value <= 1)
         {
-            LoaderSlider.value -= (float)0.5 * Time.deltaTime;
+            LoaderSlider.value -= (float)0.05 * Time.deltaTime;
         }
     }
 }

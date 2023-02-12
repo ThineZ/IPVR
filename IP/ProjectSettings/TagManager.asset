@@ -16,12 +16,13 @@ TagManager:
   - Plug
   - Wood
   - Ground
-  - Climbable
   - Axe
   - Bow
   - Spear
   - SignUpBTN
   - Rod
+  - Rock
+  - String
   layers:
   - Default
   - TransparentFX

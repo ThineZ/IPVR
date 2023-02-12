@@ -20,6 +20,10 @@ public class AxeHeadVelocity : MonoBehaviour
 
     private void Awake()
     {
+        HalfOne = GameObject.Find("HalfOne");
+        HalfTwo = GameObject.Find("HalfTwo");
+        WoodObj = GameObject.Find("Wood");
+        WoodHealth = GameObject.Find("Health").GetComponent<TMP_Text>();
         WoodHealth.text = totalHealth.ToString();
     }
 
