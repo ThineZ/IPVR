@@ -23,6 +23,7 @@ TagManager:
   - Rod
   - Rock
   - String
+  - Beef
   layers:
   - Default
   - TransparentFX

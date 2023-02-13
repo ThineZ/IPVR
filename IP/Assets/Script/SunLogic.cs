@@ -1,6 +1,10 @@
 using UnityEngine;
-using TMPro;
 using System;
+
+using Firebase;
+using Firebase.Database;
+using Firebase.Extensions;
+using Firebase.Auth;
 
 public class SunLogic : MonoBehaviour
 {
@@ -9,9 +13,8 @@ public class SunLogic : MonoBehaviour
 
     [SerializeField]
     private float startHour;
-
-    [SerializeField]
-    private TextMeshProUGUI timeText;
+    
+    public string timeCount;
 
     [SerializeField]
     private Light sunLight;
@@ -46,7 +49,6 @@ public class SunLogic : MonoBehaviour
 
     private TimeSpan sunsetTime;
 
-    // Start is called before the first frame update
     void Start()
     {
         currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
@@ -55,7 +57,6 @@ public class SunLogic : MonoBehaviour
         sunsetTime = TimeSpan.FromHours(sunsetHour);
     }
 
-    // Update is called once per frame
     void Update()
     {
         UpdateTimeOfDay();
@@ -67,9 +68,9 @@ public class SunLogic : MonoBehaviour
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
 
-        if (timeText != null)
+        if (timeCount != null)
         {
-            timeText.text = currentTime.ToString("HH:mm");
+           timeCount = currentTime.ToString("HH:mm");
         }
     }
 
