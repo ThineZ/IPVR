@@ -1,10 +1,8 @@
 using UnityEngine;
 using System;
-
-using Firebase;
-using Firebase.Database;
-using Firebase.Extensions;
 using Firebase.Auth;
+using UnityEditor.Rendering;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 public class SunLogic : MonoBehaviour
 {
@@ -49,6 +47,22 @@ public class SunLogic : MonoBehaviour
 
     private TimeSpan sunsetTime;
 
+    private DateTime dateTime;
+
+    [SerializeField]
+    public int CounterTimerAdder;
+
+    public PlayerStatesDB PSDB;
+    public FirebaseAuth auth;
+    public FirebaseUser user;
+
+    public PlayerMovements PlayerMovements;
+
+    private void Awake()
+    {
+        auth = FirebaseAuth.DefaultInstance;
+    }
+
     void Start()
     {
         currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);
@@ -62,6 +76,7 @@ public class SunLogic : MonoBehaviour
         UpdateTimeOfDay();
         RotateSun();
         UpdateLightSettings();
+        UpdateTimeStates();
     }
 
     private void UpdateTimeOfDay()
@@ -72,6 +87,28 @@ public class SunLogic : MonoBehaviour
         {
            timeCount = currentTime.ToString("HH:mm");
         }
+    }
+
+    public void UpdateTimeStates()
+    {
+        dateTime = DateTime.Now.Date;
+
+        if (currentTime.Subtract(dateTime).TotalDays > CounterTimerAdder)
+        {
+            CounterTimerAdder += 1;
+            Debug.Log("Counter " + CounterTimerAdder);
+            UpdatePlayerState(ReturnDayTime(), PlayerMovements.ReturnEatCount());
+        }
+    }
+
+    public int ReturnDayTime()
+    {
+        return CounterTimerAdder;
+    }
+
+    public void UpdatePlayerState(int TimeCount, int EatCount)
+    {
+        PSDB.UpdatePlayerStats(auth.CurrentUser.UserId, TimeCount, EatCount);
     }
 
     private void RotateSun()

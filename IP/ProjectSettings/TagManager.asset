@@ -24,6 +24,7 @@ TagManager:
   - Rock
   - String
   - Beef
+  - Cook
   layers:
   - Default
   - TransparentFX

@@ -29,6 +29,11 @@ public class CookLogic : MonoBehaviour
         {
             isCooking = false;
         }
+
+        if (other.gameObject.tag == "Cook")
+        {
+            isCooking = false;
+        }
     }
 
     private void Update()
@@ -56,6 +61,7 @@ public class CookLogic : MonoBehaviour
                 if (CookMeter.value == 1f)
                 {
                     RawPrefab.GetComponent<MeshRenderer>().material = CookMat;
+                    RawPrefab.transform.gameObject.tag = "Cook";
                 }
             }
         }

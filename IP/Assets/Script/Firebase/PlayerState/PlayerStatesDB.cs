@@ -52,7 +52,7 @@ public class PlayerStatesDB : MonoBehaviour
                         PSC.EatCount = EatCount;
                     }
 
-                    if (TimeCount > PSC.TimeCount)
+                    if (TimeCount < PSC.TimeCount || TimeCount > PSC.TimeCount)
                     {
                         PSC.TimeCount = TimeCount;
                     }
