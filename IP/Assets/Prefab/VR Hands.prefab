@@ -15604,8 +15604,8 @@ GameObject:
   - component: {fileID: 5778595098408167667}
   - component: {fileID: 3980148173268433608}
   - component: {fileID: 8997477033854438021}
-  - component: {fileID: 7108761377938597140}
   - component: {fileID: 8460295197127994339}
+  - component: {fileID: 8889732595028755835}
   m_Layer: 0
   m_Name: VR Hands
   m_TagString: Untagged
@@ -16196,7 +16196,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &7108761377938597140
+--- !u!114 &8460295197127994339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3512792646487847723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af65f207b930524e9ceec7d05de43bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 2552061482351100316}
+  Anchorsss: {fileID: 7641037291129011721}
+--- !u!114 &8889732595028755835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16217,20 +16231,6 @@ MonoBehaviour:
   EatCountAdder: 0
   PSDB: {fileID: 0}
   SunLogic: {fileID: 0}
---- !u!114 &8460295197127994339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3512792646487847723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1af65f207b930524e9ceec7d05de43bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 2552061482351100316}
-  Anchorsss: {fileID: 7641037291129011721}
 --- !u!1 &3512792646544967352
 GameObject:
   m_ObjectHideFlags: 0
