@@ -5,7 +5,7 @@ public class ButtonDebug : MonoBehaviour
 {
     public void NewTraining()
     {
-        //SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1);
     }
 
     public void Options()

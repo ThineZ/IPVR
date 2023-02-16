@@ -107,6 +107,7 @@ public class PlayerMovements : MonoBehaviour
     public void UpdatePlayerState(int TimeCount ,int EatCount)
     {
         PSDB.UpdatePlayerStats(Auth.CurrentUser.UserId, TimeCount, EatCount);
+        Debug.Log("Eat Count " + TimeCount + EatCount);
     }
 
     private void Update()

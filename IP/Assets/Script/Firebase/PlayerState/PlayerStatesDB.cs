@@ -9,14 +9,23 @@ public class PlayerStatesDB : MonoBehaviour
     // Database
     DatabaseReference PSDB;
 
+    FirebaseAuth auth;
+
     private void Awake()
     {
         InitFirebase();
     }
 
+    private void Start()
+    {
+        UpdatePlayerStats(auth.CurrentUser.UserId, 0, 0);
+    }
+
     private void InitFirebase()
     {
         PSDB = FirebaseDatabase.DefaultInstance.GetReference("PlayerStates");
+
+        auth = FirebaseAuth.DefaultInstance;
     }
 
     public void UpdatePlayerStats(string uuid, int TimeCount, int EatCount)
@@ -40,25 +49,21 @@ public class PlayerStatesDB : MonoBehaviour
                     // Udate the Player State
                     // Compare existing data and set new data
                     PlayerStatesClass PSC = JsonUtility.FromJson<PlayerStatesClass>(PlayerStatsSnapshot.GetRawJsonValue());
-
+                    Debug.Log("eat " + EatCount + " time " + TimeCount + " limit " + PSC.TimeCount);
                     Debug.Log(PSC.PlayerStatsToJson());
 
                     Debug.Log("PSC " + PSC.TimeCount);
                     Debug.Log("PSDB " + TimeCount);
 
                     // Check if player have eatten
-                    if (EatCount > PSC.EatCount)
+                    if (EatCount != PSC.EatCount)
                     {
                         PSC.EatCount = EatCount;
                     }
 
-                    if (TimeCount < PSC.TimeCount || TimeCount > PSC.TimeCount)
+                    if (TimeCount != PSC.TimeCount)
                     {
                         PSC.TimeCount = TimeCount;
-                    }
-                    else
-                    {
-                        PSC.TimeCount = 0;
                     }
 
                     // Update Overide

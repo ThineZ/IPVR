@@ -25,30 +25,30 @@ public class CursorOnCanvas : MonoBehaviour
             Vector3 diffPos = Mouse.transform.position - PreviousPos;
 
             // Updating Cursor Pos X and Z
-            CursorPos += new Vector3(diffPos.x, 0, diffPos.z);
+            CursorPos += new Vector3(diffPos.x, 0, diffPos.z) * 2f;
 
             // Set the Transform Position of Cursor X to the same as Mouse Position X
             //Cursor.SetLocalPositionX(Mouse.transform.position.x - (0.372f));
-            Cursor.SetLocalPositionX(Mathf.Abs(CursorPos.x + 18.592f));
+            Cursor.SetLocalPositionX(CursorPos.x + 18.592f);
 
 
             // Set the Transform Position of Cursor Y to the same as Mouse Position Z
             // As Cursor is 2D and Mouse is 3D
             //Cursor.SetLocalPositionY(Mouse.transform.position.z);
-            Cursor.SetLocalPositionY(Mathf.Abs(CursorPos.z + 45.722f));
+            Cursor.SetLocalPositionY(CursorPos.z + 45.722f);
         }
         PreviousPos = Mouse.transform.position;
     }
 
     private void CursorBoundX()
     {
-        if (Cursor.transform.position.x == -0.9)
+        if (Cursor.localPosition.x <= -0.9)
         {
             Debug.Log("Cursor Position X is less then -0.9");
             Cursor.SetLocalPositionX(-0.9f);
         }
 
-        if (Cursor.transform.position.x == 0.9)
+        if (Cursor.localPosition.x >= 0.9)
         {
             Debug.Log("Cursor Position X is more then 0.9");
             Cursor.SetLocalPositionX(0.9f);
@@ -57,13 +57,13 @@ public class CursorOnCanvas : MonoBehaviour
 
     private void CursorBoundY()
     {
-        if (Mouse.transform.position.z == -0.45)
+        if (Cursor.localPosition.y <= -0.45)
         {
             Debug.Log("Cursor Position Y is less then -0.4");
             Cursor.SetLocalPositionY(-0.45f);
         }
 
-        if (Mouse.transform.position.z == 0.45)
+        if (Cursor.localPosition.y >= 0.45)
         {
             Debug.Log("Cursor Position Y is more then 0.4");
             Cursor.SetLocalPositionY(0.45f);

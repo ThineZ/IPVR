@@ -1,3 +1,4 @@
+using UltimateXR.Manipulation;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,11 +22,15 @@ public class SlotSprit : MonoBehaviour
     {
         if (other.gameObject.tag == "Axe")
         {
+            var grabObject = other.gameObject.GetComponent<UxrGrabbableObject>().IsBeingGrabbed;
+
+            if(!grabObject)
+                Items[0].transform.SetParent(Slots.transform, true);
+
             ItemPicture.sprite = ItemSprite[0];
 
             Items[0] = GameObject.Find("AxeV2(Clone)");
 
-            Items[0].transform.SetParent(Slots.transform, true);
 
             Items[0].GetComponent<Rigidbody>().isKinematic = true;
 
@@ -36,11 +41,18 @@ public class SlotSprit : MonoBehaviour
 
         if (other.gameObject.tag == "Bow")
         {
+            var grabObject = other.gameObject.GetComponent<UxrGrabbableObject>().IsBeingGrabbed;
+
+            Debug.Log(grabObject);
+
+            if (!grabObject)
+                Items[1].transform.SetParent(Slots.transform, true);
+
             ItemPicture.sprite = ItemSprite[1];
 
             Items[1] = GameObject.Find("BowBB(Clone)");
 
-            Items[1].transform.SetParent(Slots.transform, true);
+            //Items[1].transform.SetParent(Slots.transform, true);
 
             Items[1].GetComponent<Rigidbody>().isKinematic = true;
             

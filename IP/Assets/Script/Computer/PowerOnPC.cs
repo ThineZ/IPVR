@@ -1,12 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class PowerOnPC : MonoBehaviour
-{
-    [Header("Plug Socket Interactor")]
-    [SerializeField] private XRSocketInteractor PlugSocket;
-    
+{    
     [Header("Power Button")]
     public Button PowerButton;
 
@@ -16,10 +12,10 @@ public class PowerOnPC : MonoBehaviour
 
     [SerializeField] private bool isPlugIn = false;
 
-    private void Awake()
-    {
-        PlugSocket = GameObject.Find("PowerAdaptor").GetComponent<XRSocketInteractor>();
-    }
+    [Header("Guides")]
+    public GameObject G4;
+    public GameObject G3;
+    public GameObject G2;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -27,6 +23,8 @@ public class PowerOnPC : MonoBehaviour
         {
             isPlugIn = true;
             PowerButton.image.color = Color.red;
+            G2.SetActive(false);
+            G3.SetActive(true);
         }
     }
 
@@ -48,6 +46,9 @@ public class PowerOnPC : MonoBehaviour
             PowerButton.image.color = Color.green;
             OffScreen.transform.gameObject.SetActive(false);
             OnScreen.transform.gameObject.SetActive(true);
+
+            G3.SetActive(false);
+            G4.SetActive(true);
         }
         else if (isPlugIn == false)
         {
