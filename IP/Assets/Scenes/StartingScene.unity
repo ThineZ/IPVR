@@ -324,18 +324,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6791913}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &10950770 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8889732595028755835, guid: 3b865afc3bcb28443a79bcb8d4e88c74,
-    type: 3}
-  m_PrefabInstance: {fileID: 5460623639256482363}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd87f514b9d14da4f9e8df65181cb30a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &12557077
 GameObject:
   m_ObjectHideFlags: 0
@@ -7116,7 +7104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 1603861933}
+  m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -7354,7 +7342,7 @@ MonoBehaviour:
   maxMoonLightIntensity: 0.5
   CounterTimerAdder: 0
   PSDB: {fileID: 845623084}
-  PlayerMovements: {fileID: 10950770}
+  PlayerMovements: {fileID: 0}
 --- !u!4 &939695669
 Transform:
   m_ObjectHideFlags: 0
@@ -9619,7 +9607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 1603861933}
+  m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -11707,18 +11695,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.32977092, y: 0.112080894, z: 0.0109585365}
   m_Center: {x: -0.0012283176, y: -0.1772659, z: 0.0056114844}
---- !u!114 &1603861933 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8407386987966411678, guid: 3b865afc3bcb28443a79bcb8d4e88c74,
-    type: 3}
-  m_PrefabInstance: {fileID: 5460623639256482363}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63266bbebf63ce4498daff9d4f2b438d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1608162544
 GameObject:
   m_ObjectHideFlags: 0
@@ -18796,21 +18772,6 @@ PrefabInstance:
       propertyPath: _rigInfo._rightArmInfo._handUniversalLocalAxes._universalToActualAxesRotation.z
       value: 0.68568075
       objectReference: {fileID: 0}
-    - target: {fileID: 8889732595028755835, guid: 3b865afc3bcb28443a79bcb8d4e88c74,
-        type: 3}
-      propertyPath: Food
-      value: 
-      objectReference: {fileID: 886984923}
-    - target: {fileID: 8889732595028755835, guid: 3b865afc3bcb28443a79bcb8d4e88c74,
-        type: 3}
-      propertyPath: PSDB
-      value: 
-      objectReference: {fileID: 845623084}
-    - target: {fileID: 8889732595028755835, guid: 3b865afc3bcb28443a79bcb8d4e88c74,
-        type: 3}
-      propertyPath: SunLogic
-      value: 
-      objectReference: {fileID: 939695668}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b865afc3bcb28443a79bcb8d4e88c74, type: 3}
 --- !u!1001 &5481666099343795948

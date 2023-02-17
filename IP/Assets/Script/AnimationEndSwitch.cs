@@ -5,6 +5,6 @@ public class AnimationEndSwitch : MonoBehaviour
 {
     public void CheckAnimEnded()
     {
-        Debug.Log("Switch Scene");
+        SceneManager.LoadScene(3);
     }
 }

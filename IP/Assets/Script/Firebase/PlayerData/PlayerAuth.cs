@@ -6,6 +6,9 @@ using Firebase.Auth;
 using Firebase.Database;
 using TMPro;
 
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
+
 public class PlayerAuth : MonoBehaviour
 {
     //Database Reference
@@ -110,6 +113,9 @@ public class PlayerAuth : MonoBehaviour
 
                 // At the same time able to store the User Credentials into Firebase Database with unqie UUID
                 CreateAccounts(user.UserId, ResEmail.Trim(), ResPwd.Trim());
+
+                // Go To Scene
+                SceneManager.LoadScene(2);
 
                 if (user != null)
                 {
