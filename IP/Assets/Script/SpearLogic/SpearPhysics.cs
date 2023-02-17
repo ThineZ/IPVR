@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using UnityEditor;
 
 public class SpearPhysics : MonoBehaviour
 {
@@ -17,6 +18,19 @@ public class SpearPhysics : MonoBehaviour
     public RuntimeAnimatorController Controller;
     public AnimalMovements AnimalMovements;
     public NavMeshAgent Agent;
+
+    private void Awake()
+    {
+        CowAnim = GameObject.Find("Cow").GetComponent<Animator>();
+        AnimalMovements = GameObject.Find("Cow").GetComponent<AnimalMovements>();
+        Agent = GameObject.Find("Cow").GetComponent<NavMeshAgent>();
+    }
+
+    private void Update()
+    {
+        SpearRB = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<Rigidbody>();
+        SpearCollider = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<CapsuleCollider>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -65,30 +79,6 @@ public class SpearPhysics : MonoBehaviour
             SpearCollider.isTrigger = false;
 
             Debug.Log("Spear Not Stick");
-        }
-    }
-
-    private void Update()
-    {
-        if (isStick)
-        {
-            //SpearRB.isKinematic = true;
-            //SpearRB.useGravity = false;
-
-            //SpearCollider.isTrigger = true;
-
-            //HitEvent.Invoke();
-
-            //Debug.Log("Spear Stick");
-        }
-        else
-        {
-            //SpearRB.isKinematic = false;
-            //SpearRB.useGravity = true;
-
-            //SpearCollider.isTrigger = false;
-
-            //Debug.Log("Spear Not Stick");
         }
     }
 

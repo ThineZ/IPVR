@@ -59,6 +59,28 @@ public class SlotSprit : MonoBehaviour
             Debug.Log(Slots.transform.name);
 
             isSlotIn = true;
+        }            
+        
+        if (other.gameObject.tag == "Spear")
+        {
+            var grabObject = other.gameObject.GetComponent<UxrGrabbableObject>().IsBeingGrabbed;
+
+            Debug.Log(grabObject);
+
+            if (!grabObject)
+                Items[2].transform.SetParent(Slots.transform, true);
+
+            ItemPicture.sprite = ItemSprite[2];
+
+            Items[2] = GameObject.Find("HuntingSpearWithPhysics(Clone)");
+
+            //Items[1].transform.SetParent(Slots.transform, true);
+
+            Items[2].GetComponent<Rigidbody>().isKinematic = true;
+            
+            Debug.Log(Slots.transform.name);
+
+            isSlotIn = true;
         }
     }
 
@@ -85,6 +107,17 @@ public class SlotSprit : MonoBehaviour
             Items[1].transform.SetParent(null);
 
             Items[1].GetComponent<Rigidbody>().isKinematic = false;
+        }        
+
+        if (other.gameObject.tag == "Spear")
+        {
+            ItemPicture.sprite = null;
+
+            isSlotIn = false;
+
+            Items[2].transform.SetParent(null);
+
+            Items[2].GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 }

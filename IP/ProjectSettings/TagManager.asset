@@ -18,13 +18,14 @@ TagManager:
   - Ground
   - Axe
   - Bow
-  - Spear
   - SignUpBTN
   - Rod
   - Rock
   - String
   - Beef
   - Cook
+  - Spear
+  - Branches
   layers:
   - Default
   - TransparentFX
