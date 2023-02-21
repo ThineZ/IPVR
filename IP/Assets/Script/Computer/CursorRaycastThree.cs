@@ -38,10 +38,6 @@ public class CursorRaycastThree : MonoBehaviour
                 {
                     SignUpBTN.onClick.Invoke();
                 }
-                else if (triggerEnter == false)
-                {
-                    SignUpBTN.OnDeselect(new BaseEventData(EventSystem.current));
-                }
             }
         }
     }

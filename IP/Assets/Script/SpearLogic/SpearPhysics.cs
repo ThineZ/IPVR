@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
-using UnityEditor;
 
 public class SpearPhysics : MonoBehaviour
 {
@@ -18,19 +17,14 @@ public class SpearPhysics : MonoBehaviour
     public RuntimeAnimatorController Controller;
     public AnimalMovements AnimalMovements;
     public NavMeshAgent Agent;
+    public GameObject CowSkin;
+    public GameObject MeatPrefab;
 
-    private void Awake()
-    {
-        CowAnim = GameObject.Find("Cow").GetComponent<Animator>();
-        AnimalMovements = GameObject.Find("Cow").GetComponent<AnimalMovements>();
-        Agent = GameObject.Find("Cow").GetComponent<NavMeshAgent>();
-    }
-
-    private void Update()
-    {
-        SpearRB = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<Rigidbody>();
-        SpearCollider = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<CapsuleCollider>();
-    }
+    //private void Update()
+    //{
+    //    SpearRB = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<Rigidbody>();
+    //    SpearCollider = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<CapsuleCollider>();
+    //}
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -95,13 +89,24 @@ public class SpearPhysics : MonoBehaviour
 
     public void HitAnimal()
     {
-        CowAnim.runtimeAnimatorController = Controller;
-        AnimalMovements.enabled = false;
-        Agent.enabled = false;
+        StartCoroutine(DeathAnim());
+
+        MeatPrefab.GetComponent<Rigidbody>().isKinematic = true;
+        MeatPrefab.SetActive(true);
+        MeatPrefab.transform.position = transform.position;
 
         var collider = GetComponent<Collider>();
         collider.enabled = false;
 
         StartCoroutine(EnableFall());
+    }
+
+    public IEnumerator DeathAnim()
+    {
+        CowAnim.runtimeAnimatorController = Controller;
+        AnimalMovements.enabled = false;
+        Agent.isStopped = true;
+        yield return new WaitForSeconds(1f);
+        CowSkin.SetActive(false);
     }
 }

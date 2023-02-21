@@ -5,8 +5,6 @@ using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
 using TMPro;
-
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class PlayerAuth : MonoBehaviour
@@ -59,6 +57,13 @@ public class PlayerAuth : MonoBehaviour
     public void RegisterFunction()
     {
         StartCoroutine(RegisterLogic(ResEmail.text.Trim(), ResPassword.text.Trim()));
+    }
+
+    private IEnumerator SceneLoader()
+    {
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 
     private IEnumerator RegisterLogic(string ResEmail, string ResPwd)
@@ -114,9 +119,6 @@ public class PlayerAuth : MonoBehaviour
                 // At the same time able to store the User Credentials into Firebase Database with unqie UUID
                 CreateAccounts(user.UserId, ResEmail.Trim(), ResPwd.Trim());
 
-                // Go To Scene
-                SceneManager.LoadScene(2);
-
                 if (user != null)
                 {
                     // Create User Profile
@@ -142,6 +144,8 @@ public class PlayerAuth : MonoBehaviour
                     else
                     {
                         AlertDialog.text = "Sign Up Successfull";
+
+                        StartCoroutine(SceneLoader());
                     }
                 }
             }

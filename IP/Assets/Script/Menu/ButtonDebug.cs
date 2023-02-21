@@ -16,6 +16,5 @@ public class ButtonDebug : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 }

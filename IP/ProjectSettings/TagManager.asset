@@ -16,7 +16,6 @@ TagManager:
   - Plug
   - Wood
   - Ground
-  - Axe
   - Bow
   - SignUpBTN
   - Rod
@@ -26,6 +25,7 @@ TagManager:
   - Cook
   - Spear
   - Branches
+  - Axe
   layers:
   - Default
   - TransparentFX

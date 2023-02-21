@@ -18,10 +18,9 @@ public class TreeTrunkChopLogic : MonoBehaviour
     private void Start()
     {
         // Get the Trunk Object
-        Trunk = GameObject.Find("Wood");
+        Trunk = GameObject.Find("Target Tree");
 
         // Get the Trunk Health UI
-        TrunkHealth = GameObject.Find("Health").GetComponent<TMP_Text>();
         TrunkHealth.text = totalHealth.ToString();
     }
 
@@ -29,6 +28,8 @@ public class TreeTrunkChopLogic : MonoBehaviour
     {
         if (collision.gameObject.tag == "Axe")
         {
+            TrunkHealth.transform.gameObject.SetActive(true);
+
             totalHealth--;
             TrunkHealth.text = totalHealth.ToString();
 

@@ -11,6 +11,7 @@ public class AxeBuild : MonoBehaviour
         {
             Vector3 CurrentPos = other.transform.position;
             Instantiate(Axe, CurrentPos, Quaternion.identity);
+            Axe.GetComponent<Rigidbody>().isKinematic = true;
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
