@@ -1,21 +1,17 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.XR;
 
 public class CursorRaycastThree : MonoBehaviour
 {
-    public Collider Cursor2D;
-
     public Image sRenderer;
     public Sprite ClickCursor;
     public Sprite DefaultCursor;
 
-    public Button SignUpBTN;
+    public PlayerAuth PlayerAuth;
 
     public bool triggerEnter = false;
-
     private void GetDevices()
     {
         var inputDevices = new List<InputDevice>();
@@ -34,9 +30,10 @@ public class CursorRaycastThree : MonoBehaviour
             {
                 Debug.Log("Primary Button Is Pressed");
 
-                if (triggerEnter == true)
+                if (triggerEnter)
                 {
-                    SignUpBTN.onClick.Invoke();
+                    // Invoke the button's onClick event
+                    PlayerAuth.RegisterFunction();
                 }
             }
         }
@@ -51,11 +48,9 @@ public class CursorRaycastThree : MonoBehaviour
     {
         if (other.gameObject.tag == "SignUpBTN")
         {
-            Debug.Log("Cursor2D in SignUpBTN");
-
-            sRenderer.sprite = ClickCursor;
-
             triggerEnter = true;
+            Debug.Log("Cursor2D in SignUpBTN");
+            sRenderer.sprite = ClickCursor;
         }
     }
 
@@ -63,11 +58,10 @@ public class CursorRaycastThree : MonoBehaviour
     {
         if (other.gameObject.tag == "SignUpBTN")
         {
-            Debug.Log("Cursor2D exit SignUpBTN");
-
-            sRenderer.sprite = DefaultCursor;
-
             triggerEnter = false;
+            Debug.Log("Cursor2D exit SignUpBTN");
+            sRenderer.sprite = DefaultCursor;
         }
     }
+
 }

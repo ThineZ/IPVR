@@ -22217,9 +22217,7 @@ GameObject:
   - component: {fileID: 1128758520}
   - component: {fileID: 1128758523}
   - component: {fileID: 1128758525}
-  - component: {fileID: 1128758524}
   - component: {fileID: 1128758526}
-  - component: {fileID: 1128758527}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -22285,14 +22283,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128758519}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.10532729, y: 1.2124386, z: 44.32045}
+  m_LocalRotation: {x: -0, y: 0.5693296, z: -0, w: 0.8221094}
+  m_LocalPosition: {x: 53.2, y: 2.2625003, z: 168.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 6.354, y: 69.274, z: -2.398}
+  m_LocalEulerAnglesHint: {x: 0, y: 69.407, z: 0}
 --- !u!114 &1128758523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22326,25 +22324,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!320 &1128758524
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128758519}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 047eb5e5ada5e0442b25dd0235978745, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -6618471704688746370, guid: 047eb5e5ada5e0442b25dd0235978745, type: 2}
-    value: {fileID: 1128758525}
-  m_ExposedReferences:
-    m_References: []
 --- !u!95 &1128758525
 Animator:
   serializedVersion: 5
@@ -22358,7 +22337,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 6810eff9cd2e5cc4c9e0e347667720f1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -22377,95 +22356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0649832f9cdad48aed72c82b4a3bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1128758527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128758519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2fadf230d1919748a9aa21d40f74619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_PositionInput:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Position
-      m_Type: 0
-      m_ExpectedControlType: Vector3
-      m_Id: f71fc88b-f23d-4e9e-81a2-4dccfb68c40b
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: f0dba051-a022-4db8-9f46-6be5afb59629
-        m_Path: <XRHMD>/centerEyePosition
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Position
-        m_Flags: 0
-      - m_Name: 
-        m_Id: 8df49155-0c87-4e3f-8ba8-d37b3e02ad6d
-        m_Path: <HandheldARInputDevice>/devicePosition
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Position
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: 0}
-  m_RotationInput:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Rotation
-      m_Type: 0
-      m_ExpectedControlType: Quaternion
-      m_Id: 67bb319e-de8e-46fc-985d-24f35fed0867
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 4212e36f-49b8-4464-bd69-a78c1f4e2ce8
-        m_Path: <XRHMD>/centerEyeRotation
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Rotation
-        m_Flags: 0
-      - m_Name: 
-        m_Id: 24cb2d89-9122-456d-bb03-c897d3553b23
-        m_Path: <HandheldARInputDevice>/deviceRotation
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Rotation
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: 0}
-  m_PositionAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  m_RotationAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  m_HasMigratedActions: 1
 --- !u!4 &1140058429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5377106892865490798, guid: fcc6c562c51f43d40902812775dd2100,

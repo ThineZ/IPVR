@@ -87,11 +87,12 @@ public class PlayerMovements : MonoBehaviour
 
     public void UpdateEatStates()
     {
-        if (Food.transform.gameObject.tag == "Cook")
+        if (Food.gameObject.tag == "Cook")
         {
             if (EatCountAdder == 0)
             {
                 EatCountAdder += 1;
+                Food = GameObject.Find("MeatFood");
                 Food.SetActive(false);
                 //Food.transform.gameObject.tag = "Beef";
                 UpdatePlayerState(SunLogic.ReturnDayTime(), ReturnEatCount());

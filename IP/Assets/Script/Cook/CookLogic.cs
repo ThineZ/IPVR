@@ -10,7 +10,7 @@ public class CookLogic : MonoBehaviour
 
     [Header("Cooked Object")]
     public GameObject RawPrefab;
-    public GameObject Cook;
+    public Material CookMat;
 
     bool isCooking;
 
@@ -60,10 +60,8 @@ public class CookLogic : MonoBehaviour
 
                 if (CookMeter.value == 1f)
                 {
-                    RawPrefab.SetActive(false);
-                    Cook.SetActive(true);
-                    Cook.transform.position= RawPrefab.transform.position;
-                    Cook.transform.rotation = RawPrefab.transform.rotation;
+                    RawPrefab.GetComponent<MeshRenderer>().material = CookMat;
+                    RawPrefab.gameObject.tag = "Cook";
                 }
             }
         }

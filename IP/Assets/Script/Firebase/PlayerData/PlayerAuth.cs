@@ -59,13 +59,6 @@ public class PlayerAuth : MonoBehaviour
         StartCoroutine(RegisterLogic(ResEmail.text.Trim(), ResPassword.text.Trim()));
     }
 
-    private IEnumerator SceneLoader()
-    {
-        yield return new WaitForSeconds(1f);
-
-        SceneManager.LoadScene(2, LoadSceneMode.Single);
-    }
-
     private IEnumerator RegisterLogic(string ResEmail, string ResPwd)
     {
         if (ResEmail == "")
@@ -145,10 +138,15 @@ public class PlayerAuth : MonoBehaviour
                     {
                         AlertDialog.text = "Sign Up Successfull";
 
-                        StartCoroutine(SceneLoader());
+                        LoadedToGame();
                     }
                 }
             }
         }
+    }
+
+    private void LoadedToGame()
+    {
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 }

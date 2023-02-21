@@ -20,19 +20,16 @@ public class SpearPhysics : MonoBehaviour
     public GameObject CowSkin;
     public GameObject MeatPrefab;
 
-    //private void Update()
-    //{
-    //    SpearRB = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<Rigidbody>();
-    //    SpearCollider = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<CapsuleCollider>();
-    //}
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Spear")
         {
             collision.gameObject.GetComponent<SpearLogic>().Physics = this;
-            isStick = true; 
-            
+            isStick = true;
+
+            SpearRB = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<Rigidbody>();
+            SpearCollider = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<CapsuleCollider>();
+
             SpearRB.isKinematic = true;
             SpearRB.useGravity = false;
 
@@ -49,6 +46,9 @@ public class SpearPhysics : MonoBehaviour
         if (other.gameObject.tag == "Spear")
         {
             isStick = false;
+
+            SpearRB = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<Rigidbody>();
+            SpearCollider = GameObject.Find("HuntingSpearWithPhysics(Clone)").GetComponent<CapsuleCollider>();
 
             SpearRB.isKinematic = false;
             SpearRB.useGravity = true;
@@ -91,9 +91,9 @@ public class SpearPhysics : MonoBehaviour
     {
         StartCoroutine(DeathAnim());
 
-        MeatPrefab.GetComponent<Rigidbody>().isKinematic = true;
-        MeatPrefab.SetActive(true);
-        MeatPrefab.transform.position = transform.position;
+        Vector3 Pos = gameObject.transform.position;
+        Instantiate(MeatPrefab, Pos, Quaternion.identity);
+        MeatPrefab.name = "MeatFood";
 
         var collider = GetComponent<Collider>();
         collider.enabled = false;

@@ -11,6 +11,8 @@ public class SpearBuild : MonoBehaviour
         {
             Vector3 CurrentPos = other.transform.position;
             Instantiate(PrefabSpear, CurrentPos, Quaternion.identity);
+            PrefabSpear.GetComponent<Rigidbody>().isKinematic = true;
+            PrefabSpear.GetComponent<Collider>().isTrigger = false;
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
