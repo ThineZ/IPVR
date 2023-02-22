@@ -19,6 +19,7 @@ public class CookLogic : MonoBehaviour
         if (other.gameObject.tag == "Beef")
         {
             isCooking = true;
+            RawPrefab = GameObject.Find("Meat");
             StartCoroutine(Cooking());
         }
     }

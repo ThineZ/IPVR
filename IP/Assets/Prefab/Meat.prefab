@@ -136,11 +136,11 @@ GameObject:
   - component: {fileID: 3063672261222962320}
   m_Layer: 0
   m_Name: Meat
-  m_TagString: Cook
+  m_TagString: Beef
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5364483281950127753
 Transform:
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 06c3f1123dbfe5d42ae522845249401f, type: 2}
+  - {fileID: 2100000, guid: 703f914e0df906740a8ecc7c8a31d56b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

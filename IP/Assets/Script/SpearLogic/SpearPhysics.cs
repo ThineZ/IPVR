@@ -91,9 +91,10 @@ public class SpearPhysics : MonoBehaviour
     {
         StartCoroutine(DeathAnim());
 
-        Vector3 Pos = gameObject.transform.position;
-        Instantiate(MeatPrefab, Pos, Quaternion.identity);
-        MeatPrefab.name = "MeatFood";
+        //Vector3 Pos = gameObject.transform.position;
+        //Instantiate(MeatPrefab, Pos, Quaternion.identity);
+        //MeatPrefab.name = "MeatFood";
+        MeatPrefab.SetActive(true);
 
         var collider = GetComponent<Collider>();
         collider.enabled = false;
