@@ -20,6 +20,11 @@ public class SpearPhysics : MonoBehaviour
     public GameObject CowSkin;
     public GameObject MeatPrefab;
 
+    private void Start()
+    {
+        MeatPrefab.GetComponent<Rigidbody>().isKinematic = true;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Spear")
@@ -95,6 +100,7 @@ public class SpearPhysics : MonoBehaviour
         //Instantiate(MeatPrefab, Pos, Quaternion.identity);
         //MeatPrefab.name = "MeatFood";
         MeatPrefab.SetActive(true);
+        MeatPrefab.GetComponent<Rigidbody>().isKinematic = false;
 
         var collider = GetComponent<Collider>();
         collider.enabled = false;

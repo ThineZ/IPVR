@@ -15,26 +15,37 @@ public class MeatHint : MonoBehaviour
     {
         if (other.gameObject == Object)
         {
-            Object = GameObject.Find("MeatFood");
 
             if (!Object.GetComponent<UxrGrabbableObject>().IsBeingGrabbed)
             {
                 Object.transform.position = transform.position;
                 Object.transform.rotation = transform.rotation;
 
+                Object.GetComponent<UxrGrabbableObject>().enabled = true;
+
                 Object.GetComponent<Rigidbody>().isKinematic = true;
                 Object.GetComponent<Rigidbody>().useGravity = false;
 
-                gameObject.SetActive(false);
+                GetComponent<MeshRenderer>().enabled = false;
             }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == Object)
+        if (other.gameObject.tag == "Beef" || other.gameObject.tag == "Cook")
         {
+            Object = GameObject.Find("Meat");
             CheckIfColliderTrigger();
+        }        
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Beef" || other.gameObject.tag == "Cook")
+        {
+            Object = GameObject.Find("Meat");
+            GetComponent<MeshRenderer>().enabled = false;
         }
     }
 

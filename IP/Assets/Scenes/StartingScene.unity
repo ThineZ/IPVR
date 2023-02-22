@@ -432,7 +432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &20364079
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -666,7 +666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &34768648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -798,8 +798,7 @@ MonoBehaviour:
   _previewGrabPosesMode: 3
   _previewPosesRegenerationType: 0
   _previewPosesRegenerationIndex: -1
-  _selectedAvatarForGrips: {fileID: 3512792646487847723, guid: 3b865afc3bcb28443a79bcb8d4e88c74,
-    type: 3}
+  _selectedAvatarForGrips: {fileID: 0}
   _firstGrabPointIsMain: 1
   _grabPoint:
     _editorFoldout: 1
@@ -976,7 +975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &57105026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1272,7 +1271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &123199463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2248,7 +2247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &253443758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3067,7 +3066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &389931484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3302,7 +3301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &413067870
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3421,8 +3420,7 @@ MonoBehaviour:
   _previewGrabPosesMode: 3
   _previewPosesRegenerationType: 0
   _previewPosesRegenerationIndex: -1
-  _selectedAvatarForGrips: {fileID: 3512792646487847723, guid: 3b865afc3bcb28443a79bcb8d4e88c74,
-    type: 3}
+  _selectedAvatarForGrips: {fileID: 0}
   _firstGrabPointIsMain: 1
   _grabPoint:
     _editorFoldout: 1
@@ -4272,7 +4270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &490594356
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5537,11 +5535,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4ffa048944f194baf51af61d558d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cursor2D: {fileID: 660179377}
   sRenderer: {fileID: 660179375}
   ClickCursor: {fileID: 21300000, guid: 1a8fd4d53439fcb4987745499a20d472, type: 3}
   DefaultCursor: {fileID: 21300000, guid: 77c02dd42fd1f1b4597beac520cef4af, type: 3}
-  SignUpBTN: {fileID: 1987729758}
+  PlayerAuth: {fileID: 0}
   triggerEnter: 0
 --- !u!1 &668536904
 GameObject:
@@ -6136,7 +6133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &695166810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6593,7 +6590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &822010100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7819,7 +7816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1102714353
 Transform:
   m_ObjectHideFlags: 0
@@ -7889,6 +7886,8 @@ MonoBehaviour:
   Controller: {fileID: 0}
   AnimalMovements: {fileID: 0}
   Agent: {fileID: 0}
+  CowSkin: {fileID: 0}
+  MeatPrefab: {fileID: 0}
 --- !u!65 &1111204741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8153,7 +8152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1155128167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8399,6 +8398,8 @@ MonoBehaviour:
   Controller: {fileID: 9100000, guid: 075bf40e8dcb746418c281d14f7a2c1d, type: 2}
   AnimalMovements: {fileID: 8722865977220602414}
   Agent: {fileID: 8722865977220602415}
+  CowSkin: {fileID: 0}
+  MeatPrefab: {fileID: 0}
 --- !u!1 &1243323586
 GameObject:
   m_ObjectHideFlags: 0
@@ -9004,7 +9005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1303637281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9192,7 +9193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1355484649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9335,7 +9336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1359466378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10483,7 +10484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1440737474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10723,7 +10724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1476129389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12269,7 +12270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1767722499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12497,7 +12498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1783813748
 Transform:
   m_ObjectHideFlags: 0
@@ -13002,6 +13003,8 @@ MonoBehaviour:
   Controller: {fileID: 9100000, guid: 075bf40e8dcb746418c281d14f7a2c1d, type: 2}
   AnimalMovements: {fileID: 0}
   Agent: {fileID: 0}
+  CowSkin: {fileID: 0}
+  MeatPrefab: {fileID: 0}
 --- !u!1 &1907692999
 GameObject:
   m_ObjectHideFlags: 0
@@ -14060,7 +14063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2110297333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24057,7 +24060,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CookMeter: {fileID: 2900223269528252132}
   Fill: {fileID: 2900223270104867499}
-  RawPrefab: {fileID: 886984923}
   CookMat: {fileID: 2100000, guid: 29985db3789abe748be991949b13eaf0, type: 2}
 --- !u!1 &6820397403854254168
 GameObject:

@@ -9,7 +9,7 @@ public class CookLogic : MonoBehaviour
     public Image Fill;
 
     [Header("Cooked Object")]
-    public GameObject RawPrefab;
+    //public GameObject RawPrefab;
     public Material CookMat;
 
     bool isCooking;
@@ -19,7 +19,6 @@ public class CookLogic : MonoBehaviour
         if (other.gameObject.tag == "Beef")
         {
             isCooking = true;
-            RawPrefab = GameObject.Find("Meat");
             StartCoroutine(Cooking());
         }
     }
@@ -61,8 +60,9 @@ public class CookLogic : MonoBehaviour
 
                 if (CookMeter.value == 1f)
                 {
-                    RawPrefab.GetComponent<MeshRenderer>().material = CookMat;
-                    RawPrefab.gameObject.tag = "Cook";
+                    GameObject.Find("Meat").tag = "Cook";
+                    GameObject.Find("Meat").GetComponent<MeshRenderer>().material = CookMat;
+                    Debug.Log("COOK COOK COOK");
                 }
             }
         }

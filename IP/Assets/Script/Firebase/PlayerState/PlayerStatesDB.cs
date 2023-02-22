@@ -18,7 +18,9 @@ public class PlayerStatesDB : MonoBehaviour
 
     private void Start()
     {
-        UpdatePlayerStats(auth.CurrentUser.UserId, 0, 0);
+        InitFirebase();
+
+        //UpdatePlayerStats(auth.CurrentUser.UserId, 0, 0);
     }
 
     private void InitFirebase()
